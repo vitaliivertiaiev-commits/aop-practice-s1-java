@@ -1,32 +1,59 @@
-### Java Template Repository
+# Практична робота 1. Вступ. Алгоритм і виконавець
 
-### compile
+Розв'язання двох завдань з Java у шаблоні Maven `djnzx/java-template`.
 
-```shell
-mvn compile
-```
+## Структура
 
-### clean
+- `src/main/java/homework/h01/T1.java` — LeetCode 2413, **Smallest Even Multiple**.
+- `src/main/java/homework/h01/T2.java` — LeetCode 1523, **Count Odd Numbers in an Interval Range**.
+- `src/test/java/homework/h01/` — автоматичні тести, зокрема для граничних значень.
+- `docs/devops.md` — нотатки про термінал і файлову систему.
+- `docs/git.md` — контроль версій та основний цикл роботи з Git.
+- `docs/discussion.md` — відповіді на запитання для відкритої дискусії.
 
-```shell
-mvn clean
-```
+## Як перевірити проєкт
 
-### test
+Потрібні JDK 25 і Maven. У терміналі з кореня репозиторію виконайте:
 
-```shell
+```bash
 mvn test
 ```
 
-### reformat code
+Окремо скомпілювати код можна так:
 
-```shell
-mvn spotless:apply
+```bash
+mvn compile
 ```
 
-### check formatting
+## Алгоритми
 
-```shell
-mvn spotless:check
+**2413.** Якщо `n` парне, відповідь — `n`. Якщо `n` непарне, найменше парне кратне — `2 * n`.
+Часова складність: `O(1)`, додаткова пам'ять: `O(1)`.
+
+**1523.** Кількість непарних чисел від `0` до `x` дорівнює `x / 2 + x % 2`.
+Кількість на `[low, high]` — різниця цієї кількості для `high` і кількості непарних чисел до `low`.
+Часова складність: `O(1)`, додаткова пам'ять: `O(1)`.
+
+## Відправлення на LeetCode
+
+У редакторі LeetCode треба використати сигнатуру з умови й назву класу `Solution`.
+Методи з `T1` і `T2` можна скопіювати у відповідні класи `Solution`; пакет `homework.h01`
+та назви класів `T1`/`T2` у LeetCode не потрібні. Після відправлення збережіть справжній
+скриншот результату **Accepted** у своєму акаунті. Пароль або код підтвердження нікому не передавайте.
+
+## Git
+
+Репозиторій публічний і створений із шаблону:
+
+<https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java>
+
+Приклад основних команд для наступних змін:
+
+```bash
+git status
+git add .
+git commit -m "Complete practice 1"
+git push
 ```
 
+Пояснення до DevOps, Git і дискусійних запитань розміщені в `docs/`.
