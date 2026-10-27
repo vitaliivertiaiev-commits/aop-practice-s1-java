@@ -1,15 +1,19 @@
-# Практична робота 1. Вступ. Алгоритм і виконавець
+# Практичні роботи 1–2
 
-Розв'язання двох завдань з Java у шаблоні Maven `djnzx/java-template`.
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практична 2 продовжує
+роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
 
 - `src/main/java/homework/h01/T1.java` — LeetCode 2413, **Smallest Even Multiple**.
 - `src/main/java/homework/h01/T2.java` — LeetCode 1523, **Count Odd Numbers in an Interval Range**.
-- `src/test/java/homework/h01/` — автоматичні тести, зокрема для граничних значень.
+- `src/main/java/homework/h02/` — LeetCode 258 та 2119, Практична 2.
+- `src/test/java/homework/h01/` і `src/test/java/homework/h02/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
 - `docs/discussion.md` — відповіді на запитання для відкритої дискусії.
+- `docs/devops-2.md`, `docs/git-2.md`, `docs/discussion-2.md` — матеріали Практичної 2.
+- `evidence/` — скриншоти термінала, GitHub та результатів LeetCode.
 
 ## Як перевірити проєкт
 
@@ -57,3 +61,13 @@ git push
 ```
 
 Пояснення до DevOps, Git і дискусійних запитань розміщені в `docs/`.
+
+## Практична 2: Представлення цілих чисел
+
+- **258 — Add Digits.** Цифровий корінь дорівнює `0` для нуля та
+  `1 + (num - 1) % 9` для додатного числа. Час і пам'ять: `O(1)`.
+- **2119 — A Number After a Double Reversal.** Подвійне перевертання змінює додатне число
+  лише тоді, коли воно закінчується нулем. Час і пам'ять: `O(1)`.
+
+Публічний репозиторій залишається тим самим для обох практичних робіт:
+<https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java>
