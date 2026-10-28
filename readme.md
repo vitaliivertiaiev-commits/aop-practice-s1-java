@@ -196,4 +196,8 @@ Git-вправа використовує лише тимчасові локал
 - Автоматичні тести: `src/test/java/homework/h06/`.
 - [242 — Accepted, 56/56 тестів](evidence/leetcode/242-valid-anagram.jpg).
 - [125 — Accepted, 492/492 тести](evidence/leetcode/125-valid-palindrome.jpg).
-- [Скриншоти LeetCode](docs/evidence-6.md); докази DevOps і Git додати після виконання.
+- [Скриншоти LeetCode](docs/evidence-6.md).
+- [DevOps — 11 скриншотів і пояснення мобільних адаптацій](docs/evidence-6.md#devops).
+- [Git — 11 скриншотів, історія, пошук рядків і тег](docs/evidence-6.md#git).
+- [Тег v1.0.0](https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java/tree/v1.0.0)
+  позначає стан до додавання термінальних скриншотів.
