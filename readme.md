@@ -1,4 +1,4 @@
-# Практичні роботи 1–4
+# Практичні роботи 1–5
 
 Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–4 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
@@ -10,6 +10,7 @@
 - `src/main/java/homework/h02/` — LeetCode 258 та 2119, Практична 2.
 - `src/main/java/homework/h03/` — LeetCode 1491 та 2894, Практична 3.
 - `src/main/java/homework/h04/` — LeetCode 461 та 476, Практична 4.
+- `src/main/java/homework/h05/` — LeetCode 1913 та 977, Практична 5.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -17,7 +18,9 @@
 - `docs/devops-2.md`, `docs/git-2.md`, `docs/discussion-2.md` — матеріали Практичної 2.
 - `docs/devops-3.md`, `docs/git-3.md`, `docs/discussion-3.md` — матеріали Практичної 3.
 - `docs/devops-4.md`, `docs/git-4.md`, `docs/discussion-4.md` — матеріали Практичної 4.
+- `docs/devops-5.md`, `docs/git-5.md`, `docs/discussion-5.md` — матеріали Практичної 5.
 - `scripts/practice-4.sh` — згруповані для телефона DevOps/Git вправи практичної 4.
+- `scripts/practice-5.sh` — згруповані для телефона DevOps/Git вправи практичної 5.
 - `evidence/` — скриншоти термінала, GitHub та результатів LeetCode.
 
 ## Як перевірити проєкт
@@ -160,3 +163,31 @@ bash scripts/practice-4.sh git
 
 Git-вправа використовує тимчасовий bare remote на тому самому середовищі, а не новий
 репозиторій GitHub. Команди DevOps працюють тільки у створеній для вправи теці.
+
+## Практична 5: Масиви
+
+- **1913 — Maximum Product Difference Between Two Pairs.** За один прохід знайти
+  два найбільші й два найменші значення; відповідь — різниця їхніх добутків.
+  Час `O(n)`, додаткова пам'ять `O(1)`.
+- **977 — Squares of a Sorted Array.** Двома вказівниками порівнювати квадрати
+  крайніх значень і заповнювати результат справа наліво. Час `O(n)`, додаткова
+  пам'ять `O(n)`.
+
+### Задачі LeetCode
+
+- [1913 — Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/).
+- [977 — Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/).
+- Скриншоти **Accepted** додати після надсилання розв'язків у власному акаунті LeetCode.
+
+### DevOps, Git і дискусія
+
+Усі команди, пояснення й відповіді для відкритої дискусії наведені у файлах
+`docs/*-5.md`. На телефоні запусти згруповані вправи; вони роблять паузу
+після кожної частини, щоб зберегти скриншоти:
+
+```bash
+bash scripts/practice-5.sh all
+```
+
+Git-вправа використовує лише тимчасові локальні репозиторії та не виконує push.
+У прикладі `.env` використано фальшиве навчальне значення, а не реальний секрет.
