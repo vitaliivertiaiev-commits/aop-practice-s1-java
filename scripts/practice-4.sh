@@ -127,7 +127,7 @@ case "${1:-}" in
         run git status
         run git --no-pager log --oneline origin/main..HEAD
         run git --no-pager log --oneline HEAD..origin/main
-        run git pull --no-rebase
+        run git -c core.editor=true pull --no-rebase
         run git --no-pager log --oneline --graph -5
         run git push
         pause
