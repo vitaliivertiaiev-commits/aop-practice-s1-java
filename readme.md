@@ -177,7 +177,8 @@ Git-вправа використовує тимчасовий bare remote на 
 
 - [1913 — Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/).
 - [977 — Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/).
-- Скриншоти **Accepted** додати після надсилання розв'язків у власному акаунті LeetCode.
+- [1913 — Accepted, 96/96 тестів](evidence/leetcode/1913-maximum-product-difference.jpg).
+- [977 — Accepted, 137/137 тестів](evidence/leetcode/977-sorted-squares.jpg).
 
 ### DevOps, Git і дискусія
 
@@ -191,3 +192,9 @@ bash scripts/practice-5.sh all
 
 Git-вправа використовує лише тимчасові локальні репозиторії та не виконує push.
 У прикладі `.env` використано фальшиве навчальне значення, а не реальний секрет.
+
+### Підтвердження виконання
+
+- [DevOps — 5 скриншотів усіх частин](docs/evidence-5.md#devops).
+- [Git — скриншоти `.gitignore`, `.env`, очищення та гілок](docs/evidence-5.md#git).
+- [Відповіді для відкритої дискусії](docs/discussion-5.md).
