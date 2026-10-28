@@ -194,4 +194,6 @@ Git-вправа використовує лише тимчасові локал
 
 - Розв'язки Java: `src/main/java/homework/h06/T1.java` і `T2.java`.
 - Автоматичні тести: `src/test/java/homework/h06/`.
-- Скриншоти LeetCode, DevOps і Git додати після виконання завдань.
+- [242 — Accepted, 56/56 тестів](evidence/leetcode/242-valid-anagram.jpg).
+- [125 — Accepted, 492/492 тести](evidence/leetcode/125-valid-palindrome.jpg).
+- [Скриншоти LeetCode](docs/evidence-6.md); докази DevOps і Git додати після виконання.
