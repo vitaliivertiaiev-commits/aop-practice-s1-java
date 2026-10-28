@@ -146,7 +146,7 @@ bash scripts/practice-3.sh git
 - [LeetCode 461 — Accepted, 149/149 тестів](evidence/leetcode/461-hamming-distance.jpg).
 - [LeetCode 476 — Accepted, 154/154 тести](evidence/leetcode/476-number-complement.jpg).
 - [Git — 5 скриншотів remote, tracking, відхиленого push та успішного злиття](docs/evidence-4.md).
-- DevOps: команди й сценарій підготовлено; скриншоти виконання ще не додані.
+- [DevOps — 5 скриншотів перенаправлення, конвеєрів, stdout/stderr і пошуку](docs/evidence-4.md#devops).
 
 На скриншотах залишено тільки вміст завдань і термінала, без панелей телефона та браузера.
 Навмисно відхилений push є частиною вправи: далі показано успішне злиття та push.
