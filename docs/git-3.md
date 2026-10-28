@@ -104,3 +104,11 @@ git push
 ```
 
 Навчальні коміти з `~/dev/git-lab-p3.*` залишаються локальними та не потрапляють у цей push.
+
+## Скриншоти виконання
+
+- [Вибірковий коміт: один файл підготовлено, інший ні](../evidence/git/practice-3/01-selective-commit.jpg).
+- [Частково підготовлений файл і restore --staged](../evidence/git/practice-3/02-partial-stage-and-restore.jpg).
+- [Хеші індексу до редагування, після нього та після add](../evidence/git/practice-3/03-index-hashes.jpg).
+
+На скриншотах сценарій використовує окрему навчальну теку `~/dev/staging-p3.*`.
