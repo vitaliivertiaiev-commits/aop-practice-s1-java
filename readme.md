@@ -1,6 +1,6 @@
-# Практичні роботи 1–3
+# Практичні роботи 1–4
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2 і 3 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–4 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -9,12 +9,15 @@
 - `src/main/java/homework/h01/T2.java` — LeetCode 1523, **Count Odd Numbers in an Interval Range**.
 - `src/main/java/homework/h02/` — LeetCode 258 та 2119, Практична 2.
 - `src/main/java/homework/h03/` — LeetCode 1491 та 2894, Практична 3.
+- `src/main/java/homework/h04/` — LeetCode 461 та 476, Практична 4.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
 - `docs/discussion.md` — відповіді на запитання для відкритої дискусії.
 - `docs/devops-2.md`, `docs/git-2.md`, `docs/discussion-2.md` — матеріали Практичної 2.
 - `docs/devops-3.md`, `docs/git-3.md`, `docs/discussion-3.md` — матеріали Практичної 3.
+- `docs/devops-4.md`, `docs/git-4.md`, `docs/discussion-4.md` — матеріали Практичної 4.
+- `scripts/practice-4.sh` — згруповані для телефона DevOps/Git вправи практичної 4.
 - `evidence/` — скриншоти термінала, GitHub та результатів LeetCode.
 
 ## Як перевірити проєкт
@@ -124,3 +127,26 @@ bash scripts/practice-3.sh git
 
 Усі практичні роботи здаються за тим самим посиланням:
 <https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java>
+
+## Практична 4: Булева алгебра та бітові операції
+
+- **461 — Hamming Distance:** <https://leetcode.com/problems/hamming-distance/>.
+- **476 — Number Complement:** <https://leetcode.com/problems/number-complement/>.
+- **461 — Hamming Distance.** Відстань Геммінга дорівнює кількості одиничних бітів у
+  `x ^ y`: `Integer.bitCount(x ^ y)`. Час `O(1)` для 32-бітного `int`.
+- **476 — Number Complement.** Створити маску з одиниць до старшого значущого біта та
+  виконати XOR з `num`. Час `O(1)`, додаткова пам'ять `O(1)`.
+
+Відповіді для дискусії, команди й пояснення DevOps/Git наведені у `docs/*-4.md`.
+Після перевірки й скриншотів LeetCode практична 4 буде додана сюди за тим самим посиланням:
+<https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java>
+
+Згруповані вправи для запуску зі смартфона:
+
+```bash
+bash scripts/practice-4.sh devops
+bash scripts/practice-4.sh git
+```
+
+Git-вправа використовує тимчасовий bare remote на тому самому середовищі, а не новий
+репозиторій GitHub. Команди DevOps працюють тільки у створеній для вправи теці.
