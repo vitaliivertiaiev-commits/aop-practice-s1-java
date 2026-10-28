@@ -1,6 +1,6 @@
-# Практичні роботи 1–5
+# Практичні роботи 1–6
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–4 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–6 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -11,6 +11,7 @@
 - `src/main/java/homework/h03/` — LeetCode 1491 та 2894, Практична 3.
 - `src/main/java/homework/h04/` — LeetCode 461 та 476, Практична 4.
 - `src/main/java/homework/h05/` — LeetCode 1913 та 977, Практична 5.
+- `src/main/java/homework/h06/` — LeetCode 242 та 125, Практична 6.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -19,6 +20,7 @@
 - `docs/devops-3.md`, `docs/git-3.md`, `docs/discussion-3.md` — матеріали Практичної 3.
 - `docs/devops-4.md`, `docs/git-4.md`, `docs/discussion-4.md` — матеріали Практичної 4.
 - `docs/devops-5.md`, `docs/git-5.md`, `docs/discussion-5.md` — матеріали Практичної 5.
+- `docs/devops-6.md`, `docs/git-6.md`, `docs/discussion-6.md` — матеріали Практичної 6.
 - `evidence/` — скриншоти термінала, GitHub та результатів LeetCode.
 
 ## Як перевірити проєкт
@@ -177,3 +179,19 @@ Git-вправа використовує лише тимчасові локал
 - [DevOps — 5 скриншотів усіх частин](docs/evidence-5.md#devops).
 - [Git — скриншоти `.gitignore`, `.env`, очищення та гілок](docs/evidence-5.md#git).
 - [Відповіді для відкритої дискусії](docs/discussion-5.md).
+
+## Практична 6: Символи, кодування та рядки
+
+- [242 — Valid Anagram](https://leetcode.com/problems/valid-anagram/). Рішення рахує
+  частоти Unicode code point, а не окремих UTF-16 `char`.
+- [125 — Valid Palindrome](https://leetcode.com/problems/valid-palindrome/). Два вказівники
+  рухаються по code point, пропускають неалфавітно-цифрові символи й порівнюють без урахування регістру.
+
+Команди та пояснення до DevOps і Git наведені в `docs/devops-6.md` і `docs/git-6.md`;
+відповіді для дискусії — у `docs/discussion-6.md`. У репозиторій не додаються Shell-файли.
+
+### Підтвердження виконання
+
+- Розв'язки Java: `src/main/java/homework/h06/T1.java` і `T2.java`.
+- Автоматичні тести: `src/test/java/homework/h06/`.
+- Скриншоти LeetCode, DevOps і Git додати після виконання завдань.
