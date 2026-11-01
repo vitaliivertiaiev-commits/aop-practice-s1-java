@@ -233,7 +233,11 @@ Java-код і матеріали підготовлено в цьому ж ре
 - [DevOps 5: фрагмент netstat](screenshots/h07/devops-04-netstat-listeners.jpg).
 - [DevOps 6–7: nc, jobs та звільнення порту](screenshots/h07/devops-05-nc-and-cleanup.jpg).
 - [DevOps 5: повна таблиця TCP-слухачів lsof](screenshots/h07/devops-06-all-tcp-listeners.jpg).
+- [Git 1: unstaged і порожній diff після add](screenshots/h07/git-01-unstaged-and-add.jpg).
+- [Git 2: порівняння staged та HEAD](screenshots/h07/git-02-staged-and-head.jpg).
+- [Git 2: різні зміни working tree та index](screenshots/h07/git-03-three-states.jpg).
+- [Git 2: working tree проти HEAD](screenshots/h07/git-04-working-tree-head.jpg).
 
-Усі сім завдань DevOps підтверджено. Ще потрібні скриншоти Git та оновленого
-профілю LeetCode; обмеження G1 щодо кадру з назвою й Accepted описано вище.
+Усі сім завдань DevOps і Git 1–2 підтверджено. Ще потрібні скриншоти Git 3–8
+та оновленого профілю LeetCode; обмеження G1 щодо кадру з назвою й Accepted описано вище.
 Не використовувати скриншоти попередніх занять як докази практичної 7.

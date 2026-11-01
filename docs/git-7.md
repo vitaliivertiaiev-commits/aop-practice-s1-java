@@ -84,21 +84,33 @@ echo '=== DEFAULT CONTEXT ==='
 git -C "$P7_DIFF" --no-pager diff
 echo '=== ZERO CONTEXT ==='
 git -C "$P7_DIFF" --no-pager diff -U0
+date
+whoami
+read -r -p 'SCREEN 5: take screenshot, then press Enter. ' P7_ENTER
 echo '=== FIVE CONTEXT LINES ==='
 git -C "$P7_DIFF" --no-pager diff -U5
 git -C "$P7_DIFF" add f.txt
 git -C "$P7_DIFF" commit -qm 'друга версія'
 git -C "$P7_DIFF" --no-pager log --oneline
+date
+whoami
+read -r -p 'SCREEN 6: take screenshot, then press Enter. ' P7_ENTER
 echo '=== TWO COMMITS ==='
 git -C "$P7_DIFF" --no-pager diff HEAD~1 HEAD
 echo '=== OLD COMMIT VERSUS CLEAN WORKING TREE ==='
 git -C "$P7_DIFF" --no-pager diff HEAD~1
+date
+whoami
+read -r -p 'SCREEN 7: take screenshot, then press Enter. ' P7_ENTER
 printf 'інший файл\n' > "$P7_DIFF/other.txt"
 git -C "$P7_DIFF" add other.txt
 echo '=== ALL STAGED PATHS ==='
 git -C "$P7_DIFF" --no-pager diff --staged
 echo '=== ONLY F.TXT: EMPTY ==='
 git -C "$P7_DIFF" --no-pager diff --staged -- f.txt
+date
+whoami
+echo 'SCREEN 8: take screenshot. Block finished.'
 else
   echo 'STOP: temporary demo repository is missing. Do not use the coursework repository.'
 fi
