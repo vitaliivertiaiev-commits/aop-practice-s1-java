@@ -207,43 +207,13 @@ Git-вправа використовує лише тимчасові локал
 ## Практична 7: Керування потоком виконання
 
 - [412 — Fizz Buzz](https://leetcode.com/problems/fizz-buzz/):
-  `src/main/java/homework/h07/T1.java`.
+  `src/main/java/homework/h07/T1.java` — цикл `for` і перевірка кратності 3 та 5.
 - [1342 — Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/):
-  `src/main/java/homework/h07/T2.java`.
-- Тести AssertJ: `src/test/java/homework/h07/`; приклади оформлено окремо,
-  перевірено мінімальні й максимальні значення та всі гілки розв'язків.
+  `src/main/java/homework/h07/T2.java` — цикл `while`, ділення та віднімання.
+- Тести: `src/test/java/homework/h07/`. Обидві задачі мають Accepted.
 - [DevOps: порти й localhost](docs/devops-7.md).
 - [Git: порівняння версій](docs/git-7.md).
 - [Дискусія: шість відповідей](docs/discussion-7.md).
-- [Результати виконання](docs/evidence-7.md).
-
-- [412 — Accepted, 8/8](screenshots/h07/t1-leetcode.jpg);
-  [номер і назва](screenshots/h07/t1-leetcode-title.jpg).
-- [1342 — Accepted, 204/204](screenshots/h07/t2-leetcode.jpg);
-  [номер і назва](screenshots/h07/t2-leetcode-title.jpg).
-
-Назви задач і Accepted показані на окремих кадрах.
-- [DevOps 1–2: слухач, localhost, loopback IP та HTTP 200](screenshots/h07/devops-01-listener-and-http.jpg).
-- [DevOps 3 і частина 4: HTTP 404, відсутній сервер, зайнятий порт](screenshots/h07/devops-02-http-errors-and-busy-port.jpg).
-- [DevOps 4: зупинка й повторний запуск](screenshots/h07/devops-03-stop-and-restart.jpg).
-- [DevOps 5: фрагмент netstat](screenshots/h07/devops-04-netstat-listeners.jpg).
-- [DevOps 6–7: nc, jobs та звільнення порту](screenshots/h07/devops-05-nc-and-cleanup.jpg).
-- [DevOps 5: повна таблиця TCP-слухачів lsof](screenshots/h07/devops-06-all-tcp-listeners.jpg).
-- [Git 1: unstaged і порожній diff після add](screenshots/h07/git-01-unstaged-and-add.jpg).
-- [Git 2: порівняння staged та HEAD](screenshots/h07/git-02-staged-and-head.jpg).
-- [Git 2: різні зміни working tree та index](screenshots/h07/git-03-three-states.jpg).
-- [Git 2: working tree проти HEAD](screenshots/h07/git-04-working-tree-head.jpg).
-- [Git 3: звичайний і нульовий контекст](screenshots/h07/git-05-default-and-zero-context.jpg).
-- [Git 3–4: контекст -U5 та два коміти](screenshots/h07/git-06-context-and-commits.jpg).
-- [Git 4: порівняння комітів і чистого working tree](screenshots/h07/git-07-commit-comparisons.jpg).
-- [Git 5: фільтрація staged-змін за шляхом](screenshots/h07/git-08-path-filter.jpg).
-- [Git 6: статистика змін](screenshots/h07/git-09-statistics.jpg).
-- [Git 7: рядковий і словесний diff](screenshots/h07/git-10-word-diff.jpg).
-- [Git 8: огляд і зняття зі staging без втрати правки](screenshots/h07/git-11-review-and-unstage.jpg).
-- [Git 8: коміт і чистий стан](screenshots/h07/git-12-commit-and-clean-status.jpg).
-
+- [Результати, тести й LeetCode](docs/evidence-7.md).
+- [Скриншоти виконання](screenshots/h07/).
 - [Профіль LeetCode: 14 розв'язаних задач](screenshots/leetcode-total.jpg).
-
-Усі сім завдань DevOps та вісім завдань Git підтверджено; лічильник профілю
-показує 14 задач. Обмеження оформлення кадрів LeetCode та відсутність ніка/дати
-на фрагменті профілю описано в [результатах виконання](docs/evidence-7.md).

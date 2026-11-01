@@ -1,191 +1,75 @@
 # Практична 7. Git: порівняння версій
 
-За завданням із `aop-practice-git-7.docx`. Вправа виконується в окремому
-**тимчасовому локальному** репозиторії — це прямо передбачено листком завдання.
-Новий репозиторій на GitHub не створюється, історія практичних не змінюється.
+Вправи виконав у тимчасовому локальному репозиторії з файлом `f.txt`.
 
-Вставляти кожен блок цілком і натискати Enter після `}`.
-Шлях до тимчасового репозиторію зберігається у файлі й перечитується наступними
-блоками: змінні попереднього Shell можуть зникнути. Дата й користувач мають
-залишитися в кадрі. На паузах `SCREEN` зробити знімок кнопками телефона
-та натиснути Enter; повертатися до чату після завершення всього блоку.
+## 1–2. Робочі файли, індекс і коміт
 
-## Знімок 1. Три пари станів — завдання 1–2
+Створив файл із рядками `один`, `два`, `три` та зробив початковий коміт.
+Після додавання `чотири` команда `git diff` показала новий рядок.
+Після `git add f.txt` цей diff став порожнім, але зміна залишилася в індексі.
 
-```bash
-{
-date
-whoami
-P7_DIFF=$(mktemp -d /tmp/aop-diff-demo-7.XXXXXX)
-printf '%s\n' "$P7_DIFF" > /tmp/aop-p7-diff-repo
-git -C "$P7_DIFF" init -q
-git -C "$P7_DIFF" config user.name 'Practice 7 Demo'
-git -C "$P7_DIFF" config user.email 'practice7@example.invalid'
-git -C "$P7_DIFF" config core.quotePath false
-git -C "$P7_DIFF" config core.pager cat
-printf 'один\nдва\nтри\n' > "$P7_DIFF/f.txt"
-git -C "$P7_DIFF" add f.txt
-git -C "$P7_DIFF" commit -qm 'початок'
-printf 'чотири\n' >> "$P7_DIFF/f.txt"
-echo '=== UNSTAGED CHANGE ==='
-git -C "$P7_DIFF" --no-pager diff
-git -C "$P7_DIFF" add f.txt
-echo '=== AFTER ADD: DIFF IS EMPTY ==='
-git -C "$P7_DIFF" --no-pager diff
-date
-whoami
-read -r -p 'SCREEN 1: take screenshot, then press Enter. ' P7_ENTER
-echo '=== STAGED VERSUS COMMIT ==='
-git -C "$P7_DIFF" --no-pager diff --staged
-echo '=== WORKING TREE VERSUS COMMIT ==='
-git -C "$P7_DIFF" --no-pager diff HEAD
-date
-whoami
-read -r -p 'SCREEN 2: take screenshot, then press Enter. ' P7_ENTER
-printf 'пʼять\n' >> "$P7_DIFF/f.txt"
-echo '=== AFTER FIFTH LINE: WORKING TREE VS INDEX ==='
-git -C "$P7_DIFF" --no-pager diff
-echo '=== AFTER FIFTH LINE: INDEX VS HEAD ==='
-git -C "$P7_DIFF" --no-pager diff --staged
-date
-whoami
-read -r -p 'SCREEN 3: take screenshot, then press Enter. ' P7_ENTER
-echo '=== AFTER FIFTH LINE: WORKING TREE VS HEAD ==='
-git -C "$P7_DIFF" --no-pager diff HEAD
-date
-whoami
-echo 'SCREEN 4: take screenshot. Block finished.'
-}
-```
+| Команда | Що порівнює |
+| --- | --- |
+| `git diff` | Індекс і робочі файли |
+| `git diff --staged` | Останній коміт та індекс |
+| `git diff HEAD` | Останній коміт і робочі файли |
 
-Зняти початкову зміну, порожній diff після add і три різні відповіді
-після додавання `пʼять`. За потреби зробити кілька кадрів прокручування.
-Демонстраційні ім'я й адреса налаштовані тільки всередині тимчасової вправи,
-не в особистому репозиторії й не глобально.
+Потім дописав `пʼять` без `git add`. У звичайному diff було тільки `пʼять`,
+у staged diff — тільки `чотири`, а в diff з `HEAD` — обидва рядки.
 
-| Команда | Ліва сторона | Права сторона |
-| --- | --- | --- |
-| `git diff` | index | working tree |
-| `git diff --staged` | HEAD | index |
-| `git diff HEAD` | HEAD | working tree |
+[До й після add](../screenshots/h07/git-01-unstaged-and-add.jpg) ·
+[Порівняння з комітом](../screenshots/h07/git-02-staged-and-head.jpg) ·
+[Різні стани](../screenshots/h07/git-03-three-states.jpg) ·
+[Робочі файли проти HEAD](../screenshots/h07/git-04-working-tree-head.jpg)
 
-Мінус у diff належить лівій стороні, плюс — правій.
+## 3–5. Контекст, коміти та вибір файлу
 
-## Знімок 2. Hunk, контекст, коміти та шлях — завдання 3–5
+Замінив вміст на `нуль`, `один`, `два`, `три` та порівняв контекст:
 
 ```bash
-{
-date
-whoami
-P7_DIFF=$(cat /tmp/aop-p7-diff-repo 2>/dev/null)
-if [ -n "$P7_DIFF" ] && [ -d "$P7_DIFF/.git" ]; then
-printf 'нуль\nодин\nдва\nтри\n' > "$P7_DIFF/f.txt"
-echo '=== DEFAULT CONTEXT ==='
-git -C "$P7_DIFF" --no-pager diff
-echo '=== ZERO CONTEXT ==='
-git -C "$P7_DIFF" --no-pager diff -U0
-date
-whoami
-read -r -p 'SCREEN 5: take screenshot, then press Enter. ' P7_ENTER
-echo '=== FIVE CONTEXT LINES ==='
-git -C "$P7_DIFF" --no-pager diff -U5
-git -C "$P7_DIFF" add f.txt
-git -C "$P7_DIFF" commit -qm 'друга версія'
-git -C "$P7_DIFF" --no-pager log --oneline
-date
-whoami
-read -r -p 'SCREEN 6: take screenshot, then press Enter. ' P7_ENTER
-echo '=== TWO COMMITS ==='
-git -C "$P7_DIFF" --no-pager diff HEAD~1 HEAD
-echo '=== OLD COMMIT VERSUS CLEAN WORKING TREE ==='
-git -C "$P7_DIFF" --no-pager diff HEAD~1
-date
-whoami
-read -r -p 'SCREEN 7: take screenshot, then press Enter. ' P7_ENTER
-printf 'інший файл\n' > "$P7_DIFF/other.txt"
-git -C "$P7_DIFF" add other.txt
-echo '=== ALL STAGED PATHS ==='
-git -C "$P7_DIFF" --no-pager diff --staged
-echo '=== ONLY F.TXT: EMPTY ==='
-git -C "$P7_DIFF" --no-pager diff --staged -- f.txt
-date
-whoami
-echo 'SCREEN 8: take screenshot. Block finished.'
-else
-  echo 'STOP: temporary demo repository is missing. Do not use the coursework repository.'
-fi
-}
+git diff
+git diff -U0
+git diff -U5
 ```
 
-Для першого `git diff` тут очікується `@@ -1,4 +1,4 @@`:
-зі старої версії з рядка 1 показано 4 рядки, з нової — також з рядка 1 показано 4.
-Стара сторона — **index**, де вже є `чотири`, не перший коміт.
-`-U0` показує окремі мінімальні фрагменти, `-U5` — ширший контекст.
-Два порівняння `HEAD~1` збігаються саме тому, що working tree після коміту чистий.
-Після staging `other.txt` загальний staged diff непорожній,
-але обмежений `-- f.txt` порожній: цей шлях не змінено.
+У заголовку `@@ -1,4 +1,4 @@` обидва фрагменти починаються з першого рядка
+і містять по чотири рядки. `-U0` залишає лише зміни, `-U5` додає контекст.
+Мінус позначає видалення зі старої версії, плюс — додавання в нову.
 
-## Знімок 3. Масштаб, слова й огляд перед комітом — завдання 6–8
+Після другого коміту виконав:
 
 ```bash
-{
-date
-whoami
-P7_DIFF=$(cat /tmp/aop-p7-diff-repo 2>/dev/null)
-if [ -n "$P7_DIFF" ] && [ -d "$P7_DIFF/.git" ]; then
-echo '=== CHANGE SCALE ==='
-git -C "$P7_DIFF" --no-pager diff --stat HEAD~1
-git -C "$P7_DIFF" --no-pager diff --shortstat HEAD~1
-printf 'Алгоритм має бути скінченним.\n' > "$P7_DIFF/text.md"
-git -C "$P7_DIFF" add text.md
-git -C "$P7_DIFF" --no-pager diff --staged
-git -C "$P7_DIFF" commit -qm 'текст'
-date
-whoami
-read -r -p 'SCREEN 9: take screenshot, then press Enter. ' P7_ENTER
-printf 'Алгоритм має бути скінченним і детермінованим.\n' > "$P7_DIFF/text.md"
-echo '=== WHOLE LINE ==='
-git -C "$P7_DIFF" --no-pager diff
-echo '=== CHANGED WORDS ==='
-git -C "$P7_DIFF" --no-pager diff --word-diff
-date
-whoami
-read -r -p 'SCREEN 10: take screenshot, then press Enter. ' P7_ENTER
-git -C "$P7_DIFF" add text.md
-echo '=== REVIEW BEFORE COMMIT ==='
-git -C "$P7_DIFF" --no-pager diff --staged
-echo '=== UNSTAGE WITHOUT LOSING THE EDIT ==='
-git -C "$P7_DIFF" restore --staged text.md
-git -C "$P7_DIFF" status --short
-git -C "$P7_DIFF" --no-pager diff
-date
-whoami
-read -r -p 'SCREEN 11: take screenshot, then press Enter. ' P7_ENTER
-echo '=== STAGE, REVIEW, THEN COMMIT ==='
-git -C "$P7_DIFF" add text.md
-git -C "$P7_DIFF" --no-pager diff --staged
-git -C "$P7_DIFF" commit -qm 'уточнити властивості алгоритму'
-git -C "$P7_DIFF" --no-pager log --oneline -4
-echo '=== FINAL STATUS: EMPTY ==='
-git -C "$P7_DIFF" status --short
-date
-whoami
-echo 'SCREEN 12: take screenshot. Block finished.'
-else
-  echo 'STOP: temporary demo repository is missing. Do not use the coursework repository.'
-fi
-}
+git diff HEAD~1 HEAD
+git diff HEAD~1
 ```
 
-Коміт `текст`, як і в листку, включає вже підготовлений `other.txt`.
-У `--word-diff` без змін `скінченним.` і `скінченним` не тотожні через крапку,
-тому Git може позначити заміну цього слова разом із доданими словами.
-`restore --staged` прибирає файл із index, але не стирає редагування.
-Останній порожній `status --short` показує чистий стан демонстраційного репозиторію.
+Результати однакові, бо робочі файли відповідали останньому коміту.
+Потім додав `other.txt` до індексу. Загальний `git diff --staged` показав його,
+а `git diff --staged -- f.txt` був порожнім: у `f.txt` staged-змін не було.
 
-Знімки потрібно зберегти в `screenshots/h07/` з префіксом `git-`.
-Якщо довгі виводи не вміщуються, дозволено більше трьох кадрів — важливе
-підтвердження всіх восьми вправ, а не лише заголовків.
+[Звичайний контекст і -U0](../screenshots/h07/git-05-default-and-zero-context.jpg) ·
+[-U5 і коміти](../screenshots/h07/git-06-context-and-commits.jpg) ·
+[Порівняння версій](../screenshots/h07/git-07-commit-comparisons.jpg) ·
+[Фільтр за файлом](../screenshots/h07/git-08-path-filter.jpg)
 
-Перед комітом справжньої практичної в особистому репозиторії також переглядати
-`git diff --staged`. Команди вправи з `/tmp/` не потрібно запускати в ньому.
+## 6–8. Статистика, слова й перевірка перед комітом
+
+```bash
+git diff --stat HEAD~1
+git diff --shortstat HEAD~1
+git diff --word-diff
+```
+
+Статистика показала два змінені файли й два додані рядки.
+У `text.md` дописав «і детермінованим». Звичайний diff показав заміну рядка,
+а `--word-diff` виділив змінені слова.
+
+Перед комітом переглянув `git diff --staged`. Командою
+`git restore --staged text.md` прибрав файл з індексу:
+`status --short` показав `M text.md`, а правка залишилася у файлі.
+Після повторного `add`, перевірки й коміту `status --short` був порожнім.
+
+[Статистика](../screenshots/h07/git-09-statistics.jpg) ·
+[Word diff](../screenshots/h07/git-10-word-diff.jpg) ·
+[Зняття зі staging](../screenshots/h07/git-11-review-and-unstage.jpg) ·
+[Коміт і чистий стан](../screenshots/h07/git-12-commit-and-clean-status.jpg)
