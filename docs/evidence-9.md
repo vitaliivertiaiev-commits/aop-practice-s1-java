@@ -59,10 +59,14 @@
 - [Посилання main та HEAD](../screenshots/h09/git-01-refs.jpg):
   хеш у `.git/refs/heads/main` збігається з комітом у журналі,
   а `.git/HEAD` посилається на гілку `main`.
+- [Створення гілки](../screenshots/h09/git-02-branch.jpg):
+  `feature/notes` та `main` спочатку посилаються на той самий коміт.
+- [Коміт у гілці](../screenshots/h09/git-03-commit.jpg):
+  новий коміт змінює посилання `feature/notes`, а `main` залишається на базовому коміті.
 - [Перейменування гілки](../screenshots/h09/git-07-rename.jpg):
   створено `experiment`, потім перейменовано на `experiment/bitwise`.
 
-Скриншоти решти вправ Git ще не додані.
+Скриншоти вправ Git 4–6 ще не додані.
 
 ## LeetCode
 
