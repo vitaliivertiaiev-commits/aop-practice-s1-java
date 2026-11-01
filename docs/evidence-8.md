@@ -1,0 +1,42 @@
+# Практична 8. Результати
+
+## Java
+
+| Задача | Рішення | Тести |
+| --- | --- | --- |
+| [485 — Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | [T1.java](../src/main/java/homework/h08/T1.java) | [T1Test.java](../src/test/java/homework/h08/T1Test.java) |
+| [2824 — Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [T2.java](../src/main/java/homework/h08/T2.java) | [T2Test.java](../src/test/java/homework/h08/T2Test.java) |
+
+У першій задачі зберігається довжина поточної та найбільшої серії.
+Нуль обриває серію. Час — `O(n)`, додаткова пам'ять — `O(1)`.
+
+У другій задачі сортується копія списку. Якщо сума крайніх елементів
+менша за `target`, до результату додається `rightIndex - leftIndex`.
+Інакше правий вказівник зсувається ліворуч. Початковий список не змінюється.
+Час — `O(n log n)`, додаткова пам'ять — `O(n)`.
+
+## Перевірка
+
+24 тести практичної охоплюють приклади LeetCode, граничні значення,
+порожні дані, повтори, строгу нерівність і незмінність вхідних даних.
+Для підрахунку пар додатково порівнюються всі 3125 списків довжини 5
+зі значеннями від -2 до 2 для семи значень `target` із прямим перебором.
+
+У чистому клоні на OpenJDK 25.0.2:
+
+| Команда | Результат |
+| --- | --- |
+| `mvn clean compile` | BUILD SUCCESS |
+| `mvn test-compile` | BUILD SUCCESS |
+| `mvn test` | 152 тести, без помилок і пропусків |
+| `mvn spotless:check` | BUILD SUCCESS |
+
+Покриття `h08` за JaCoCo: 20/20 рядків і 8/8 гілок.
+
+## Інші частини
+
+- [DevOps: оточення](devops-8.md).
+- [Git: скасування змін](git-8.md).
+- [Відповіді на дискусію](discussion-8.md).
+
+Скриншоти Git, DevOps та Accepted у LeetCode ще не додані.

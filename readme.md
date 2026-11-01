@@ -217,3 +217,15 @@ Git-вправа використовує лише тимчасові локал
 - [Результати, тести й LeetCode](docs/evidence-7.md).
 - [Скриншоти виконання](screenshots/h07/).
 - [Профіль LeetCode: 14 розв'язаних задач](screenshots/leetcode-total.jpg).
+
+## Практична 8: Патерни роботи з масивами
+
+- [485 — Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/):
+  `src/main/java/homework/h08/T1.java` — один прохід і довжина поточної серії.
+- [2824 — Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/):
+  `src/main/java/homework/h08/T2.java` — сортована копія та два вказівники.
+- Тести: `src/test/java/homework/h08/`.
+- [DevOps: оточення](docs/devops-8.md).
+- [Git: скасування змін](docs/git-8.md).
+- [Дискусія: шість відповідей](docs/discussion-8.md).
+- [Результати](docs/evidence-8.md).
