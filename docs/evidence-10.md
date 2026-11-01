@@ -32,3 +32,8 @@
 - [DevOps: артефакти збірки](devops-10.md).
 - [Git: злиття гілок](git-10.md).
 - [Дискусія: шість відповідей](discussion-10.md).
+
+## DevOps
+
+- [Збірка JAR](../screenshots/h10/devops-01-package.jpg):
+  `mvn package` завершився успішно та створив `target/demo-1.0.0.jar`.
