@@ -1,6 +1,6 @@
-# Практичні роботи 1–7
+# Практичні роботи 1–8
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–7 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–8 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -13,6 +13,7 @@
 - `src/main/java/homework/h05/` — LeetCode 1913 та 977, Практична 5.
 - `src/main/java/homework/h06/` — LeetCode 242 та 125, Практична 6.
 - `src/main/java/homework/h07/` — LeetCode 412 та 1342, Практична 7.
+- `src/main/java/homework/h08/` — LeetCode 485 та 2824, Практична 8.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -23,6 +24,8 @@
 - `docs/devops-5.md`, `docs/git-5.md`, `docs/discussion-5.md` — матеріали Практичної 5.
 - `docs/devops-6.md`, `docs/git-6.md`, `docs/discussion-6.md` — матеріали Практичної 6.
 - `docs/devops-7.md`, `docs/git-7.md`, `docs/discussion-7.md` — матеріали Практичної 7.
+- `docs/devops-8.md`, `docs/git-8.md`, `docs/discussion-8.md` — матеріали Практичної 8.
+- [Результати Практичної 8](docs/evidence-8.md) — тести та скриншоти.
 - `screenshots/hNN/` — скриншоти відповідних занять; папки додаються разом зі справжніми знімками.
 - [Перевірка за критеріями A–G](docs/submission-checklist.md) — виконані перевірки та вимоги до оновлення скриншотів.
 
