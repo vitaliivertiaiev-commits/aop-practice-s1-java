@@ -1,6 +1,6 @@
-# Практичні роботи 1–8
+# Практичні роботи 1–9
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–8 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–9 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -14,6 +14,7 @@
 - `src/main/java/homework/h06/` — LeetCode 242 та 125, Практична 6.
 - `src/main/java/homework/h07/` — LeetCode 412 та 1342, Практична 7.
 - `src/main/java/homework/h08/` — LeetCode 485 та 2824, Практична 8.
+- `src/main/java/homework/h09/` — LeetCode 1512 та 1431, Практична 9.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -26,6 +27,8 @@
 - `docs/devops-7.md`, `docs/git-7.md`, `docs/discussion-7.md` — матеріали Практичної 7.
 - `docs/devops-8.md`, `docs/git-8.md`, `docs/discussion-8.md` — матеріали Практичної 8.
 - [Результати Практичної 8](docs/evidence-8.md) — тести та скриншоти.
+- `docs/devops-9.md`, `docs/git-9.md`, `docs/discussion-9.md` — матеріали Практичної 9.
+- [Результати Практичної 9](docs/evidence-9.md) — рішення, тести та скриншоти.
 - `screenshots/hNN/` — скриншоти відповідних занять; папки додаються разом зі справжніми знімками.
 - [Перевірка за критеріями A–G](docs/submission-checklist.md) — виконані перевірки та вимоги до оновлення скриншотів.
 
@@ -232,3 +235,15 @@ Git-вправа використовує лише тимчасові локал
 - [Git: скасування змін](docs/git-8.md).
 - [Дискусія: шість відповідей](docs/discussion-8.md).
 - [Результати](docs/evidence-8.md).
+
+## Практична 9: Структура коду, функції та декомпозиція
+
+- [1512 — Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/):
+  `src/main/java/homework/h09/T1.java` — підрахунок частот окремим методом.
+- [1431 — Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/):
+  `src/main/java/homework/h09/T2.java` — пошук максимуму та формування відповіді.
+- Тести: `src/test/java/homework/h09/`.
+- [DevOps: від коду до програми](docs/devops-9.md).
+- [Git: гілки](docs/git-9.md).
+- [Дискусія: шість відповідей](docs/discussion-9.md).
+- [Результати](docs/evidence-9.md).
