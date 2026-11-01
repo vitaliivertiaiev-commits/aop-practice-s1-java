@@ -63,7 +63,7 @@ P7_HTTP=$(cat /tmp/aop-p7-http.pid 2>/dev/null)
 P7_WEB=$(cat /tmp/aop-p7-http-root 2>/dev/null)
 if [ -n "$P7_HTTP" ] && [ -d "$P7_WEB" ] && \
    [ "$(lsof -t -nP -iTCP:8000 -sTCP:LISTEN)" = "$P7_HTTP" ] && \
-   [ "$(ps -p "$P7_HTTP" -o args=)" = "python3 -m http.server 8000 --bind 127.0.0.1 --directory $P7_WEB" ]; then
+   [ "$(ps -ww -p "$P7_HTTP" -o args=)" = "python3 -m http.server 8000 --bind 127.0.0.1 --directory $P7_WEB" ]; then
 echo '=== HTTP ERROR: SERVER ANSWERED ==='
 curl -i --max-time 3 http://localhost:8000/no-such-file
 echo '=== CONNECTION ERROR: NO SERVER ==='
@@ -106,7 +106,7 @@ P7_HTTP=$(cat /tmp/aop-p7-http.pid 2>/dev/null)
 P7_WEB=$(cat /tmp/aop-p7-http-root 2>/dev/null)
 if [ -n "$P7_HTTP" ] && \
    [ "$(lsof -t -nP -iTCP:8000 -sTCP:LISTEN)" = "$P7_HTTP" ] && \
-   [ "$(ps -p "$P7_HTTP" -o args=)" = "python3 -m http.server 8000 --bind 127.0.0.1 --directory $P7_WEB" ]; then
+   [ "$(ps -ww -p "$P7_HTTP" -o args=)" = "python3 -m http.server 8000 --bind 127.0.0.1 --directory $P7_WEB" ]; then
 echo '=== ALL TCP LISTENERS ==='
 lsof -nP -iTCP -sTCP:LISTEN
 echo '=== NETSTAT LISTENERS ==='
