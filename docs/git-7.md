@@ -140,22 +140,37 @@ printf 'Алгоритм має бути скінченним.\n' > "$P7_DIFF/te
 git -C "$P7_DIFF" add text.md
 git -C "$P7_DIFF" --no-pager diff --staged
 git -C "$P7_DIFF" commit -qm 'текст'
+date
+whoami
+read -r -p 'SCREEN 9: take screenshot, then press Enter. ' P7_ENTER
 printf 'Алгоритм має бути скінченним і детермінованим.\n' > "$P7_DIFF/text.md"
 echo '=== WHOLE LINE ==='
 git -C "$P7_DIFF" --no-pager diff
 echo '=== CHANGED WORDS ==='
 git -C "$P7_DIFF" --no-pager diff --word-diff
+date
+whoami
+read -r -p 'SCREEN 10: take screenshot, then press Enter. ' P7_ENTER
 git -C "$P7_DIFF" add text.md
 echo '=== REVIEW BEFORE COMMIT ==='
 git -C "$P7_DIFF" --no-pager diff --staged
 echo '=== UNSTAGE WITHOUT LOSING THE EDIT ==='
 git -C "$P7_DIFF" restore --staged text.md
 git -C "$P7_DIFF" status --short
+git -C "$P7_DIFF" --no-pager diff
+date
+whoami
+read -r -p 'SCREEN 11: take screenshot, then press Enter. ' P7_ENTER
 echo '=== STAGE, REVIEW, THEN COMMIT ==='
 git -C "$P7_DIFF" add text.md
 git -C "$P7_DIFF" --no-pager diff --staged
 git -C "$P7_DIFF" commit -qm 'уточнити властивості алгоритму'
+git -C "$P7_DIFF" --no-pager log --oneline -4
+echo '=== FINAL STATUS: EMPTY ==='
 git -C "$P7_DIFF" status --short
+date
+whoami
+echo 'SCREEN 12: take screenshot. Block finished.'
 else
   echo 'STOP: temporary demo repository is missing. Do not use the coursework repository.'
 fi

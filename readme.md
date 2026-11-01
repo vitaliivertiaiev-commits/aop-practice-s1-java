@@ -237,7 +237,11 @@ Java-код і матеріали підготовлено в цьому ж ре
 - [Git 2: порівняння staged та HEAD](screenshots/h07/git-02-staged-and-head.jpg).
 - [Git 2: різні зміни working tree та index](screenshots/h07/git-03-three-states.jpg).
 - [Git 2: working tree проти HEAD](screenshots/h07/git-04-working-tree-head.jpg).
+- [Git 3: звичайний і нульовий контекст](screenshots/h07/git-05-default-and-zero-context.jpg).
+- [Git 3–4: контекст -U5 та два коміти](screenshots/h07/git-06-context-and-commits.jpg).
+- [Git 4: порівняння комітів і чистого working tree](screenshots/h07/git-07-commit-comparisons.jpg).
+- [Git 5: фільтрація staged-змін за шляхом](screenshots/h07/git-08-path-filter.jpg).
 
-Усі сім завдань DevOps і Git 1–2 підтверджено. Ще потрібні скриншоти Git 3–8
+Усі сім завдань DevOps і Git 1–5 підтверджено. Ще потрібні скриншоти Git 6–8
 та оновленого профілю LeetCode; обмеження G1 щодо кадру з назвою й Accepted описано вище.
 Не використовувати скриншоти попередніх занять як докази практичної 7.
