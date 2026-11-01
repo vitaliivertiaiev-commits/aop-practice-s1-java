@@ -47,3 +47,6 @@
   суми JAR та копії збігаються; дописування одного байта змінює суму копії.
 - [Архіви ZIP і TAR.GZ](../screenshots/h10/devops-05-archives.jpg):
   створено `release.zip` та `release.tar.gz`, перевірено їхній вміст.
+- [Ігнорування й повторна збірка](../screenshots/h10/devops-06-ignore-rebuild.jpg):
+  `target/` додано до `.gitignore`; після `mvn clean` артефакт відновлено
+  через `mvn package`, його SHA-256 не змінився.
