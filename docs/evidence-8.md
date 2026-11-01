@@ -39,4 +39,21 @@
 - [Git: скасування змін](git-8.md).
 - [Відповіді на дискусію](discussion-8.md).
 
-Скриншоти Git, DevOps та Accepted у LeetCode ще не додані.
+## LeetCode
+
+- [485: код і позначка Solved](../screenshots/h08/t1-leetcode-solved.jpg).
+- [2824: код і позначка Solved](../screenshots/h08/t2-leetcode-solved.jpg).
+
+Обидві задачі позначені як розв'язані. Окремі кадри результатів Accepted
+і новий знімок лічильника профілю ще не додані.
+
+## DevOps
+
+- [Локальна й експортована змінні](../screenshots/h08/devops-01-local-export.jpg):
+  дочірній процес отримав тільки експортовану змінну.
+- [PATH і пошук Java та Git](../screenshots/h08/devops-02-path.jpg).
+- [Власна команда hello](../screenshots/h08/devops-03-command-search.jpg):
+  після зміни PATH команда працює; у новому shell з початковим PATH
+  знову не знаходиться.
+
+Скриншоти решти вправ DevOps та Git ще не додані.
