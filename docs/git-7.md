@@ -4,8 +4,11 @@
 **тимчасовому локальному** репозиторії — це прямо передбачено листком завдання.
 Новий репозиторій на GitHub не створюється, історія практичних не змінюється.
 
-Вставляти кожен блок цілком і натискати Enter після `}`. Працювати в тому самому
-Shell, не закривати його між блоками. Дата й користувач мають залишитися в кадрі.
+Вставляти кожен блок цілком і натискати Enter після `}`.
+Шлях до тимчасового репозиторію зберігається у файлі й перечитується наступними
+блоками: змінні попереднього Shell можуть зникнути. Дата й користувач мають
+залишитися в кадрі. На паузах `SCREEN` зробити знімок кнопками телефона
+та натиснути Enter; повертатися до чату після завершення всього блоку.
 
 ## Знімок 1. Три пари станів — завдання 1–2
 
@@ -14,6 +17,7 @@ Shell, не закривати його між блоками. Дата й ко�
 date
 whoami
 P7_DIFF=$(mktemp -d /tmp/aop-diff-demo-7.XXXXXX)
+printf '%s\n' "$P7_DIFF" > /tmp/aop-p7-diff-repo
 git -C "$P7_DIFF" init -q
 git -C "$P7_DIFF" config user.name 'Practice 7 Demo'
 git -C "$P7_DIFF" config user.email 'practice7@example.invalid'
@@ -28,15 +32,29 @@ git -C "$P7_DIFF" --no-pager diff
 git -C "$P7_DIFF" add f.txt
 echo '=== AFTER ADD: DIFF IS EMPTY ==='
 git -C "$P7_DIFF" --no-pager diff
+date
+whoami
+read -r -p 'SCREEN 1: take screenshot, then press Enter. ' P7_ENTER
 echo '=== STAGED VERSUS COMMIT ==='
 git -C "$P7_DIFF" --no-pager diff --staged
 echo '=== WORKING TREE VERSUS COMMIT ==='
 git -C "$P7_DIFF" --no-pager diff HEAD
+date
+whoami
+read -r -p 'SCREEN 2: take screenshot, then press Enter. ' P7_ENTER
 printf 'пʼять\n' >> "$P7_DIFF/f.txt"
-echo '=== NOW ALL THREE PAIRS DIFFER ==='
+echo '=== AFTER FIFTH LINE: WORKING TREE VS INDEX ==='
 git -C "$P7_DIFF" --no-pager diff
+echo '=== AFTER FIFTH LINE: INDEX VS HEAD ==='
 git -C "$P7_DIFF" --no-pager diff --staged
+date
+whoami
+read -r -p 'SCREEN 3: take screenshot, then press Enter. ' P7_ENTER
+echo '=== AFTER FIFTH LINE: WORKING TREE VS HEAD ==='
 git -C "$P7_DIFF" --no-pager diff HEAD
+date
+whoami
+echo 'SCREEN 4: take screenshot. Block finished.'
 }
 ```
 
@@ -59,6 +77,8 @@ git -C "$P7_DIFF" --no-pager diff HEAD
 {
 date
 whoami
+P7_DIFF=$(cat /tmp/aop-p7-diff-repo 2>/dev/null)
+if [ -n "$P7_DIFF" ] && [ -d "$P7_DIFF/.git" ]; then
 printf 'нуль\nодин\nдва\nтри\n' > "$P7_DIFF/f.txt"
 echo '=== DEFAULT CONTEXT ==='
 git -C "$P7_DIFF" --no-pager diff
@@ -79,6 +99,9 @@ echo '=== ALL STAGED PATHS ==='
 git -C "$P7_DIFF" --no-pager diff --staged
 echo '=== ONLY F.TXT: EMPTY ==='
 git -C "$P7_DIFF" --no-pager diff --staged -- f.txt
+else
+  echo 'STOP: temporary demo repository is missing. Do not use the coursework repository.'
+fi
 }
 ```
 
@@ -96,6 +119,8 @@ git -C "$P7_DIFF" --no-pager diff --staged -- f.txt
 {
 date
 whoami
+P7_DIFF=$(cat /tmp/aop-p7-diff-repo 2>/dev/null)
+if [ -n "$P7_DIFF" ] && [ -d "$P7_DIFF/.git" ]; then
 echo '=== CHANGE SCALE ==='
 git -C "$P7_DIFF" --no-pager diff --stat HEAD~1
 git -C "$P7_DIFF" --no-pager diff --shortstat HEAD~1
@@ -119,6 +144,9 @@ git -C "$P7_DIFF" add text.md
 git -C "$P7_DIFF" --no-pager diff --staged
 git -C "$P7_DIFF" commit -qm 'уточнити властивості алгоритму'
 git -C "$P7_DIFF" status --short
+else
+  echo 'STOP: temporary demo repository is missing. Do not use the coursework repository.'
+fi
 }
 ```
 

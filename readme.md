@@ -232,7 +232,8 @@ Java-код і матеріали підготовлено в цьому ж ре
 - [DevOps 4: зупинка й повторний запуск](screenshots/h07/devops-03-stop-and-restart.jpg).
 - [DevOps 5: фрагмент netstat](screenshots/h07/devops-04-netstat-listeners.jpg).
 - [DevOps 6–7: nc, jobs та звільнення порту](screenshots/h07/devops-05-nc-and-cleanup.jpg).
+- [DevOps 5: повна таблиця TCP-слухачів lsof](screenshots/h07/devops-06-all-tcp-listeners.jpg).
 
-Ще потрібен кадр таблиці всіх TCP-слухачів `lsof` для DevOps 5,
-скриншоти Git та оновленого профілю LeetCode.
+Усі сім завдань DevOps підтверджено. Ще потрібні скриншоти Git та оновленого
+профілю LeetCode; обмеження G1 щодо кадру з назвою й Accepted описано вище.
 Не використовувати скриншоти попередніх занять як докази практичної 7.
