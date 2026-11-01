@@ -1,6 +1,6 @@
-# Практичні роботи 1–9
+# Практичні роботи 1–10
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–9 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–10 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -15,6 +15,7 @@
 - `src/main/java/homework/h07/` — LeetCode 412 та 1342, Практична 7.
 - `src/main/java/homework/h08/` — LeetCode 485 та 2824, Практична 8.
 - `src/main/java/homework/h09/` — LeetCode 1512 та 1431, Практична 9.
+- `src/main/java/homework/h10/` — LeetCode 3304 та 344, Практична 10.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -29,6 +30,8 @@
 - [Результати Практичної 8](docs/evidence-8.md) — тести та скриншоти.
 - `docs/devops-9.md`, `docs/git-9.md`, `docs/discussion-9.md` — матеріали Практичної 9.
 - [Результати Практичної 9](docs/evidence-9.md) — рішення, тести та скриншоти.
+- `docs/devops-10.md`, `docs/git-10.md`, `docs/discussion-10.md` — матеріали Практичної 10.
+- [Результати Практичної 10](docs/evidence-10.md) — рішення, тести та скриншоти.
 - `screenshots/hNN/` — скриншоти відповідних занять; папки додаються разом зі справжніми знімками.
 
 ## Як перевірити проєкт
@@ -246,3 +249,15 @@ Git-вправа використовує лише тимчасові локал
 - [Git: гілки](docs/git-9.md).
 - [Дискусія: шість відповідей](docs/discussion-9.md).
 - [Результати](docs/evidence-9.md).
+
+## Практична 10: Рекурсія
+
+- [3304 — Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/):
+  `src/main/java/homework/h10/T1.java` — рекурсивний пошук потрібної літери.
+- [344 — Reverse String](https://leetcode.com/problems/reverse-string/):
+  `src/main/java/homework/h10/T2.java` — розворот на місці з обмеженою глибиною рекурсії.
+- Тести: `src/test/java/homework/h10/`.
+- [DevOps: артефакти збірки](docs/devops-10.md).
+- [Git: злиття гілок](docs/git-10.md).
+- [Дискусія: шість відповідей](docs/discussion-10.md).
+- [Результати](docs/evidence-10.md).
