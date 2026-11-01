@@ -44,7 +44,11 @@
 - [Версії JVM та компілятора](../screenshots/h09/devops-04-versions.jpg):
   `java` і `javac` мають однакову версію 25.0.2.
 
-Скриншоти решти вправ DevOps ще не додані.
+- [Збірка Maven](../screenshots/h09/devops-05-maven.jpg):
+  `mvn compile` завершився успішно, створено `target/classes/Main.class`,
+  програму запущено з цим classpath.
+
+Скриншот життєвого циклу Maven ще не доданий.
 
 ## Git
 
