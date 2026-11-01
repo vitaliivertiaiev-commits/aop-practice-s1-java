@@ -1,6 +1,6 @@
-# Практичні роботи 1–6
+# Практичні роботи 1–7
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–6 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–7 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -12,6 +12,7 @@
 - `src/main/java/homework/h04/` — LeetCode 461 та 476, Практична 4.
 - `src/main/java/homework/h05/` — LeetCode 1913 та 977, Практична 5.
 - `src/main/java/homework/h06/` — LeetCode 242 та 125, Практична 6.
+- `src/main/java/homework/h07/` — LeetCode 412 та 1342, Практична 7.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -21,7 +22,8 @@
 - `docs/devops-4.md`, `docs/git-4.md`, `docs/discussion-4.md` — матеріали Практичної 4.
 - `docs/devops-5.md`, `docs/git-5.md`, `docs/discussion-5.md` — матеріали Практичної 5.
 - `docs/devops-6.md`, `docs/git-6.md`, `docs/discussion-6.md` — матеріали Практичної 6.
-- `screenshots/h01/`–`screenshots/h06/` — скриншоти відповідних занять.
+- `docs/devops-7.md`, `docs/git-7.md`, `docs/discussion-7.md` — матеріали Практичної 7.
+- `screenshots/hNN/` — скриншоти відповідних занять; папки додаються разом зі справжніми знімками.
 - [Перевірка за критеріями A–G](docs/submission-checklist.md) — виконані перевірки та вимоги до оновлення скриншотів.
 
 ## Як перевірити проєкт
@@ -203,3 +205,20 @@ Git-вправа використовує лише тимчасові локал
 - [Git — 11 скриншотів, історія, пошук рядків і тег](docs/evidence-6.md#git).
 - [Тег v1.0.0](https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java/tree/v1.0.0)
   позначає стан до додавання термінальних скриншотів.
+
+## Практична 7: Керування потоком виконання
+
+- [412 — Fizz Buzz](https://leetcode.com/problems/fizz-buzz/):
+  `src/main/java/homework/h07/T1.java`.
+- [1342 — Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/):
+  `src/main/java/homework/h07/T2.java`.
+- Тести AssertJ: `src/test/java/homework/h07/`; приклади оформлено окремо,
+  перевірено мінімальні й максимальні значення та всі гілки розв'язків.
+- [DevOps: порти й localhost](docs/devops-7.md).
+- [Git: порівняння версій](docs/git-7.md).
+- [Дискусія: шість відповідей](docs/discussion-7.md).
+- [Стан виконання та вимоги до доказів](docs/evidence-7.md).
+
+Java-код і матеріали підготовлено в цьому ж репозиторії. Скриншоти Accepted,
+DevOps, Git та оновленого профілю LeetCode потрібно додати після виконання.
+Не використовувати скриншоти попередніх занять як докази практичної 7.
