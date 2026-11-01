@@ -40,3 +40,6 @@
 - [Вміст JAR і маніфест](../screenshots/h10/devops-02-manifest-missing.jpg):
   архів містить `Main.class`, але без `Main-Class` запуск через `java -jar`
   завершується очікуваною помилкою.
+- [Запускний JAR](../screenshots/h10/devops-03-executable-jar.jpg):
+  після налаштування плагіна маніфест містить `Main-Class: Main`,
+  а `java -jar` запускає програму.
