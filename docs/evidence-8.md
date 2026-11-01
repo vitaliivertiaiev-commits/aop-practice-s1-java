@@ -64,7 +64,9 @@
 - [Редактор і змінні оточення](../screenshots/h08/devops-06-editor-env.jpg):
   `EDITOR=nano`, налаштування `core.editor`, перегляд `HOME` та `env`.
 
-Скриншот DevOps №7 ще не додано.
+- [Oh My Zsh](../screenshots/h08/devops-07-oh-my-zsh.jpg):
+  порівняння запрошення до та після завантаження теми,
+  відображення гілки `main` і перевірка аліасів `gs` та `ls`.
 
 ## Git
 
