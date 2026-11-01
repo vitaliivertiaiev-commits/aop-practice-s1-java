@@ -61,7 +61,10 @@
 - [Аліаси gs і gl](../screenshots/h08/devops-05-aliases.jpg):
   перегляд змінених файлів та історії комітів короткими командами.
 
-Скриншоти DevOps №6–7 ще не додані.
+- [Редактор і змінні оточення](../screenshots/h08/devops-06-editor-env.jpg):
+  `EDITOR=nano`, налаштування `core.editor`, перегляд `HOME` та `env`.
+
+Скриншот DevOps №7 ще не додано.
 
 ## Git
 
