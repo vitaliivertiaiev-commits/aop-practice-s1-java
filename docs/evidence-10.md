@@ -50,3 +50,8 @@
 - [Ігнорування й повторна збірка](../screenshots/h10/devops-06-ignore-rebuild.jpg):
   `target/` додано до `.gitignore`; після `mvn clean` артефакт відновлено
   через `mvn package`, його SHA-256 не змінився.
+
+## Git
+
+- [Fast-forward](../screenshots/h10/git-01-fast-forward.jpg):
+  `main` пересунуто до комміту `feature`, окремий комміт злиття не створено.
