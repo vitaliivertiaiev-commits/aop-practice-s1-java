@@ -55,3 +55,6 @@
 
 - [Fast-forward](../screenshots/h10/git-01-fast-forward.jpg):
   `main` пересунуто до комміту `feature`, окремий комміт злиття не створено.
+- [Merge-комміт](../screenshots/h10/git-02-merge-commit.jpg):
+  після окремих змін у `main` та `feature2` злиття створило новий комміт,
+  граф показує розгалуження й об'єднання історії.
