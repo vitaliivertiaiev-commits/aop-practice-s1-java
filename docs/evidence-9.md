@@ -67,10 +67,11 @@
   у `main` файл містить лише базовий рядок, у `feature/notes` є також нотатка.
 - [Detached HEAD](../screenshots/h09/git-05-detached-head.jpg):
   `.git/HEAD` містить хеш коміту; `git switch -` повертає до `feature/notes`.
+- [Видалення гілки](../screenshots/h09/git-06-delete.jpg):
+  `-d` відмовляє для незлитої гілки, `-D` видаляє її.
+  Коміт залишається доступним через reflog; `cat-file` та `show` підтверджують це.
 - [Перейменування гілки](../screenshots/h09/git-07-rename.jpg):
   створено `experiment`, потім перейменовано на `experiment/bitwise`.
-
-Скриншот вправи Git 6 ще не доданий.
 
 ## LeetCode
 
