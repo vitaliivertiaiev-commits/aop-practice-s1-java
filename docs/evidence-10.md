@@ -65,3 +65,8 @@
 - [Відмова `--ff-only` та видалення гілок](../screenshots/h10/git-05-06-ff-only-cleanup.jpg):
   розбіжність історії не дозволила Fast-forward; злиті `feature`, `feature2`
   та `feature3` видалено через `-d`, незлиту `feature4` залишено.
+
+## LeetCode
+
+- [3304 — Find the K-th Character in String Game I](../screenshots/h10/leetcode-3304.jpg) — Solved.
+- [344 — Reverse String](../screenshots/h10/leetcode-344.jpg) — Solved.
