@@ -1,7 +1,8 @@
 # Практична 7. DevOps: порти й localhost
 
 За завданням із `aop-practice-devops-7.docx`. Новий GitHub-репозиторій не потрібен.
-Усі команди вводяться в одному вікні Shell. Це не Java-код і не Shell-файл у репозиторії.
+Це не Java-код і не Shell-файл у репозиторії. PID та каталог сервера зберігаються
+в тимчасових файлах: повернення браузера до нового Shell не зберігає його змінні.
 
 Потрібні `python3`, `curl`, `lsof`, `nc`, `netstat`; додатково можна використати `ss`.
 Спочатку виконати `lsof -nP -iTCP:8000 -sTCP:LISTEN` та
@@ -20,8 +21,10 @@ mkdir -p "$HOME/dev/files-lab"
 P7_WEB=$(mktemp -d "$HOME/dev/files-lab/practice-7.XXXXXX")
 cd "$P7_WEB"
 printf 'Practice 7: localhost\n' > index.html
-python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/aop-p7-http.log 2>&1 &
+python3 -m http.server 8000 --bind 127.0.0.1 --directory "$P7_WEB" > /tmp/aop-p7-http.log 2>&1 &
 P7_HTTP=$!
+printf '%s\n' "$P7_HTTP" > /tmp/aop-p7-http.pid
+printf '%s\n' "$P7_WEB" > /tmp/aop-p7-http-root
 for P7_WAIT in {1..30}; do
   if curl -fsS --max-time 1 http://127.0.0.1:8000 > /dev/null 2>&1; then break; fi
   sleep 1
@@ -49,12 +52,18 @@ curl -i --max-time 3 http://localhost:8000
 
 ## Знімок 2. Різні помилки й звільнення зайнятого порту — завдання 3–4
 
-Залишатися в тому самому Shell, сервер із першого блоку має працювати.
+Сервер із першого блоку має працювати. Якщо він зник разом зі старим Shell,
+не продовжувати вправу з порожнім PID: блок зупиниться з повідомленням.
 
 ```bash
 {
 date
 whoami
+P7_HTTP=$(cat /tmp/aop-p7-http.pid 2>/dev/null)
+P7_WEB=$(cat /tmp/aop-p7-http-root 2>/dev/null)
+if [ -n "$P7_HTTP" ] && [ -d "$P7_WEB" ] && \
+   [ "$(lsof -t -nP -iTCP:8000 -sTCP:LISTEN)" = "$P7_HTTP" ] && \
+   [ "$(ps -p "$P7_HTTP" -o args=)" = "python3 -m http.server 8000 --bind 127.0.0.1 --directory $P7_WEB" ]; then
 echo '=== HTTP ERROR: SERVER ANSWERED ==='
 curl -i --max-time 3 http://localhost:8000/no-such-file
 echo '=== CONNECTION ERROR: NO SERVER ==='
@@ -66,15 +75,19 @@ echo '=== OWNER OF THE BUSY PORT ==='
 lsof -i :8000
 echo "Stopping only our demo server: $P7_HTTP"
 kill "$P7_HTTP"
-wait "$P7_HTTP"
+wait "$P7_HTTP" 2>/dev/null || true
 echo '=== RESTART AFTER RELEASING THE PORT ==='
-python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/aop-p7-http.log 2>&1 &
+python3 -m http.server 8000 --bind 127.0.0.1 --directory "$P7_WEB" > /tmp/aop-p7-http.log 2>&1 &
 P7_HTTP=$!
+printf '%s\n' "$P7_HTTP" > /tmp/aop-p7-http.pid
 for P7_WAIT in {1..30}; do
   if curl -fsS --max-time 1 http://127.0.0.1:8000 > /dev/null 2>&1; then break; fi
   sleep 1
 done
 lsof -i :8000
+else
+  echo 'STOP: demo server is missing or changed. Do not kill an unknown process.'
+fi
 }
 ```
 
@@ -89,6 +102,11 @@ PID старого та нового серверів. Якщо все не вм
 {
 date
 whoami
+P7_HTTP=$(cat /tmp/aop-p7-http.pid 2>/dev/null)
+P7_WEB=$(cat /tmp/aop-p7-http-root 2>/dev/null)
+if [ -n "$P7_HTTP" ] && \
+   [ "$(lsof -t -nP -iTCP:8000 -sTCP:LISTEN)" = "$P7_HTTP" ] && \
+   [ "$(ps -p "$P7_HTTP" -o args=)" = "python3 -m http.server 8000 --bind 127.0.0.1 --directory $P7_WEB" ]; then
 echo '=== ALL TCP LISTENERS ==='
 lsof -nP -iTCP -sTCP:LISTEN
 echo '=== NETSTAT LISTENERS ==='
@@ -103,10 +121,13 @@ echo '=== OUR SHELL JOBS ==='
 jobs -l
 echo "Stopping our server: $P7_HTTP"
 kill "$P7_HTTP"
-wait "$P7_HTTP"
+wait "$P7_HTTP" 2>/dev/null || true
 echo '=== PORT 8000 AFTER CLEANUP ==='
 lsof -i :8000
 echo "lsof exit code: $?"
+else
+  echo 'STOP: demo server is missing or changed. Do not kill an unknown process.'
+fi
 }
 ```
 
