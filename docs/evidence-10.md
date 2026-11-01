@@ -45,3 +45,5 @@
   а `java -jar` запускає програму.
 - [Контрольна сума SHA-256](../screenshots/h10/devops-04-sha256.jpg):
   суми JAR та копії збігаються; дописування одного байта змінює суму копії.
+- [Архіви ZIP і TAR.GZ](../screenshots/h10/devops-05-archives.jpg):
+  створено `release.zip` та `release.tar.gz`, перевірено їхній вміст.
