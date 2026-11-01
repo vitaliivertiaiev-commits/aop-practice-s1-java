@@ -241,7 +241,11 @@ Java-код і матеріали підготовлено в цьому ж ре
 - [Git 3–4: контекст -U5 та два коміти](screenshots/h07/git-06-context-and-commits.jpg).
 - [Git 4: порівняння комітів і чистого working tree](screenshots/h07/git-07-commit-comparisons.jpg).
 - [Git 5: фільтрація staged-змін за шляхом](screenshots/h07/git-08-path-filter.jpg).
+- [Git 6: статистика змін](screenshots/h07/git-09-statistics.jpg).
+- [Git 7: рядковий і словесний diff](screenshots/h07/git-10-word-diff.jpg).
+- [Git 8: огляд і зняття зі staging без втрати правки](screenshots/h07/git-11-review-and-unstage.jpg).
+- [Git 8: коміт і чистий стан](screenshots/h07/git-12-commit-and-clean-status.jpg).
 
-Усі сім завдань DevOps і Git 1–5 підтверджено. Ще потрібні скриншоти Git 6–8
-та оновленого профілю LeetCode; обмеження G1 щодо кадру з назвою й Accepted описано вище.
+Усі сім завдань DevOps та вісім завдань Git підтверджено. Ще потрібен скриншот
+оновленого профілю LeetCode; обмеження G1 щодо кадру з назвою й Accepted описано вище.
 Не використовувати скриншоти попередніх занять як докази практичної 7.
