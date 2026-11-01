@@ -55,5 +55,7 @@
 - [Власна команда hello](../screenshots/h08/devops-03-command-search.jpg):
   після зміни PATH команда працює; у новому shell з початковим PATH
   знову не знаходиться.
+- [Постійне налаштування PATH](../screenshots/h08/devops-04-persistent-path.jpg):
+  після запису в `.zshrc` команда працює і в новому інтерактивному zsh.
 
 Скриншоти решти вправ DevOps та Git ще не додані.
