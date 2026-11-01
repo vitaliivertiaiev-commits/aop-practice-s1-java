@@ -58,3 +58,5 @@
 - [Merge-комміт](../screenshots/h10/git-02-merge-commit.jpg):
   після окремих змін у `main` та `feature2` злиття створило новий комміт,
   граф показує розгалуження й об'єднання історії.
+- [Два батьківські комміти](../screenshots/h10/git-03-two-parents.jpg):
+  `git cat-file -p HEAD` показує дві строки `parent` для merge-комміту.
