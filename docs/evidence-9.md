@@ -41,6 +41,8 @@
   імені файла класу. Наведено коди завершення.
 - [Classpath](../screenshots/h09/devops-03-classpath.jpg):
   без шляху клас не знайдено, а `java -cp out Main` запускає програму.
+- [Версії JVM та компілятора](../screenshots/h09/devops-04-versions.jpg):
+  `java` і `javac` мають однакову версію 25.0.2.
 
 Скриншоти решти вправ DevOps ще не додані.
 
