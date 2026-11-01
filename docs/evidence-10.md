@@ -60,3 +60,5 @@
   граф показує розгалуження й об'єднання історії.
 - [Два батьківські комміти](../screenshots/h10/git-03-two-parents.jpg):
   `git cat-file -p HEAD` показує дві строки `parent` для merge-комміту.
+- [Злиття з `--no-ff`](../screenshots/h10/git-04-no-ff.jpg):
+  для `feature3` створено окремий merge-комміт навіть за можливості Fast-forward.
