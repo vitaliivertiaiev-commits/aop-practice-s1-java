@@ -51,9 +51,14 @@
 - [Життєвий цикл Maven](../screenshots/h09/devops-06-maven-lifecycle.jpg):
   етап тестування завершився успішно (у демонстраційному проєкті тестів немає),
   після `clean` каталогу `target` немає, а повторна компіляція створює його знову.
+- [Команда mvn test](../screenshots/h09/devops-06-maven-test.jpg):
+  запуск етапу тестування та його успішне завершення.
 
 ## Git
 
+- [Посилання main та HEAD](../screenshots/h09/git-01-refs.jpg):
+  хеш у `.git/refs/heads/main` збігається з комітом у журналі,
+  а `.git/HEAD` посилається на гілку `main`.
 - [Перейменування гілки](../screenshots/h09/git-07-rename.jpg):
   створено `experiment`, потім перейменовано на `experiment/bitwise`.
 
