@@ -22,7 +22,10 @@ cd "$P7_WEB"
 printf 'Practice 7: localhost\n' > index.html
 python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/aop-p7-http.log 2>&1 &
 P7_HTTP=$!
-sleep 1
+for P7_WAIT in {1..30}; do
+  if curl -fsS --max-time 1 http://127.0.0.1:8000 > /dev/null 2>&1; then break; fi
+  sleep 1
+done
 echo '=== WHO LISTENS ON 8000 ==='
 lsof -i :8000
 echo '=== LOCALHOST ==='
@@ -41,6 +44,8 @@ curl -i --max-time 3 http://localhost:8000
 `index.html` замість довгого списку файлів; прив'язка до `127.0.0.1`, щоб не
 відкривати навчальний сервер назовні; лог у тимчасовому файлі, щоб його рядки
 не перемішувалися з відповідями. Це той самий HTTP-сервер на порту 8000.
+Готовність перевіряється HTTP-запитом, а не фіксованою секундною затримкою:
+поява PID ще не означає, що Python уже почав слухати порт.
 
 ## Знімок 2. Різні помилки й звільнення зайнятого порту — завдання 3–4
 
@@ -65,7 +70,10 @@ wait "$P7_HTTP"
 echo '=== RESTART AFTER RELEASING THE PORT ==='
 python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/aop-p7-http.log 2>&1 &
 P7_HTTP=$!
-sleep 1
+for P7_WAIT in {1..30}; do
+  if curl -fsS --max-time 1 http://127.0.0.1:8000 > /dev/null 2>&1; then break; fi
+  sleep 1
+done
 lsof -i :8000
 }
 ```
