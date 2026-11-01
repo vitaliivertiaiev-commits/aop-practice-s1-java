@@ -139,6 +139,85 @@ fi
 Якщо список усіх портів довгий, зняти його окремо, а потім зняти `nc` і прибирання.
 Додатковий Linux-варіант зі списку завдання: `ss -tlnp`.
 
+## Мобільний варіант: завершити завдання 4–7 за один запуск
+
+Якщо сервер зникає між повідомленнями навіть після `nohup`, не покладатися на
+нього в наступному Shell. Після вже отриманих доказів 404, connection refused
+та зайнятого порту виконати наведений блок замість окремих наступних запусків.
+Він запускає свіжий навчальний сервер і виконує весь цикл у межах одного Shell.
+
+Після вставлення натиснути Enter після `}`. На позначках `SCREEN 1` і `SCREEN 2`
+зробити знімок апаратними кнопками телефона та натиснути Enter для продовження.
+Не переходити в чат до завершення всього блоку. Наприкінці зробити третій знімок.
+Якщо вивід не вміщується, на паузі можна прокрутити Shell і зробити кілька знімків.
+
+```bash
+{
+date
+whoami
+if lsof -nP -iTCP:8000 -sTCP:LISTEN; then
+  echo 'STOP: port 8000 is occupied. Do not kill an unknown process.'
+else
+  P7_WEB=$(mktemp -d /tmp/aop-p7-web.XXXXXX)
+  printf 'Practice 7: localhost\n' > "$P7_WEB/index.html"
+  echo '=== FIRST SERVER ==='
+  python3 -m http.server 8000 --bind 127.0.0.1 --directory "$P7_WEB" > /tmp/aop-p7-http.log 2>&1 &
+  P7_OLD=$!
+  for P7_WAIT in {1..30}; do
+    if curl -fsS --max-time 1 http://127.0.0.1:8000 >/dev/null 2>&1; then break; fi
+    sleep 1
+  done
+  lsof -i :8000
+  echo "=== STOP PID $P7_OLD ==="
+  kill "$P7_OLD"
+  wait "$P7_OLD" 2>/dev/null || true
+  echo '=== PORT AFTER STOP ==='
+  lsof -i :8000
+  echo "lsof exit code: $?"
+  echo '=== RESTART ==='
+  python3 -m http.server 8000 --bind 127.0.0.1 --directory "$P7_WEB" > /tmp/aop-p7-http.log 2>&1 &
+  P7_NEW=$!
+  for P7_WAIT in {1..30}; do
+    if curl -fsS --max-time 1 http://127.0.0.1:8000 >/dev/null 2>&1; then break; fi
+    sleep 1
+  done
+  lsof -i :8000
+  curl -sS -D - -o /dev/null --max-time 3 http://127.0.0.1:8000
+  date
+  whoami
+  read -r -p 'SCREEN 1: capture stop and restart, then press Enter. ' P7_ENTER
+  echo '=== ALL TCP LISTENERS ==='
+  lsof -nP -iTCP -sTCP:LISTEN
+  echo '=== NETSTAT LISTENERS ==='
+  netstat -an | grep LISTEN
+  date
+  whoami
+  read -r -p 'SCREEN 2: capture port lists, then press Enter. ' P7_ENTER
+  echo '=== NC OPEN PORT 8000 ==='
+  nc -z -w 2 localhost 8000
+  echo "exit code: $?"
+  echo '=== NC CLOSED PORT 9999 ==='
+  nc -z -w 2 localhost 9999
+  echo "exit code: $?"
+  echo '=== JOBS BEFORE CLEANUP ==='
+  jobs -l
+  echo "=== STOP PID $P7_NEW ==="
+  kill "$P7_NEW"
+  wait "$P7_NEW" 2>/dev/null || true
+  echo '=== PORT AFTER CLEANUP ==='
+  lsof -i :8000
+  echo "lsof exit code: $?"
+  date
+  whoami
+fi
+}
+```
+
+Перший знімок: різні PID до/після перезапуску, відсутність слухача між ними,
+exit code 1 та HTTP 200 після перезапуску. Другий: повні списки `lsof` і `netstat`.
+Третій: коди `nc` 0/1, job сервера та порожній `lsof` після прибирання з кодом 1.
+Кожен кадр має містити дату/час або `runner`. Заголовки самі по собі не є доказом.
+
 ## Що потрібно розуміти
 
 - `localhost` — ім'я локальної машини; `127.0.0.1` — її IPv4 loopback-адреса.
