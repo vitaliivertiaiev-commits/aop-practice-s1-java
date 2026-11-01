@@ -63,10 +63,14 @@
   `feature/notes` та `main` спочатку посилаються на той самий коміт.
 - [Коміт у гілці](../screenshots/h09/git-03-commit.jpg):
   новий коміт змінює посилання `feature/notes`, а `main` залишається на базовому коміті.
+- [Перемикання гілок](../screenshots/h09/git-04-switch.jpg):
+  у `main` файл містить лише базовий рядок, у `feature/notes` є також нотатка.
+- [Detached HEAD](../screenshots/h09/git-05-detached-head.jpg):
+  `.git/HEAD` містить хеш коміту; `git switch -` повертає до `feature/notes`.
 - [Перейменування гілки](../screenshots/h09/git-07-rename.jpg):
   створено `experiment`, потім перейменовано на `experiment/bitwise`.
 
-Скриншоти вправ Git 4–6 ще не додані.
+Скриншот вправи Git 6 ще не доданий.
 
 ## LeetCode
 
