@@ -75,4 +75,7 @@
 
 ## LeetCode
 
-Скриншоти розв'язаних задач ще не додані.
+- [1512 — Number of Good Pairs](../screenshots/h09/leetcode-1512.jpg):
+  Java, статус **Solved**.
+- [1431 — Kids With the Greatest Number of Candies](../screenshots/h09/leetcode-1431.jpg):
+  Java, статус **Solved**.
