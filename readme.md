@@ -229,6 +229,10 @@ Java-код і матеріали підготовлено в цьому ж ре
 описано в [стані доказів](docs/evidence-7.md).
 - [DevOps 1–2: слухач, localhost, loopback IP та HTTP 200](screenshots/h07/devops-01-listener-and-http.jpg).
 - [DevOps 3 і частина 4: HTTP 404, відсутній сервер, зайнятий порт](screenshots/h07/devops-02-http-errors-and-busy-port.jpg).
+- [DevOps 4: зупинка й повторний запуск](screenshots/h07/devops-03-stop-and-restart.jpg).
+- [DevOps 5: фрагмент netstat](screenshots/h07/devops-04-netstat-listeners.jpg).
+- [DevOps 6–7: nc, jobs та звільнення порту](screenshots/h07/devops-05-nc-and-cleanup.jpg).
 
-Скриншоти решти завдань DevOps, Git та оновленого профілю LeetCode ще потрібно додати.
+Ще потрібен кадр таблиці всіх TCP-слухачів `lsof` для DevOps 5,
+скриншоти Git та оновленого профілю LeetCode.
 Не використовувати скриншоти попередніх занять як докази практичної 7.
