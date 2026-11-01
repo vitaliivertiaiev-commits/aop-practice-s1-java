@@ -21,21 +21,23 @@
 - `docs/devops-4.md`, `docs/git-4.md`, `docs/discussion-4.md` — матеріали Практичної 4.
 - `docs/devops-5.md`, `docs/git-5.md`, `docs/discussion-5.md` — матеріали Практичної 5.
 - `docs/devops-6.md`, `docs/git-6.md`, `docs/discussion-6.md` — матеріали Практичної 6.
-- `evidence/` — скриншоти термінала, GitHub та результатів LeetCode.
+- `screenshots/h01/`–`screenshots/h06/` — скриншоти відповідних занять.
+- [Перевірка за критеріями A–G](docs/submission-checklist.md) — виконані перевірки та вимоги до оновлення скриншотів.
 
 ## Як перевірити проєкт
 
 Потрібні JDK 25 і Maven. У терміналі з кореня репозиторію виконайте:
 
 ```bash
+mvn clean compile
+mvn test-compile
 mvn test
+mvn spotless:check
 ```
 
-Окремо скомпілювати код можна так:
-
-```bash
-mvn compile
-```
+Тести використовують AssertJ. Приклади LeetCode оформлено окремими тестами;
+додано перевірки меж, довжин, помилкових аргументів і незмінності вхідних масивів.
+Файли `pom.xml` та `.gitignore` збережено без змін від шаблону.
 
 ## Алгоритми
 
@@ -79,10 +81,10 @@ git push
 
 ### Підтвердження виконання
 
-- [LeetCode 258 — Accepted](evidence/leetcode/258-add-digits.jpg).
-- [LeetCode 2119 — Accepted](evidence/leetcode/2119-double-reversal.jpg).
-- [DevOps — 8 скриншотів команд і результатів](evidence/devops/practice-2/).
-- [Git — 5 скриншотів команд і результатів](evidence/git/practice-2/).
+- [LeetCode 258 — Accepted](screenshots/h02/t1-leetcode.jpg).
+- [LeetCode 2119 — Accepted](screenshots/h02/t2-leetcode.jpg).
+- [DevOps — 8 скриншотів команд і результатів](screenshots/h02/).
+- [Git — 5 скриншотів команд і результатів](screenshots/h02/).
 - [Відповіді для дискусії](docs/discussion-2.md).
 
 Вправи термінала виконано зі смартфона. Для мобільної клавіатури використано адаптації:
@@ -109,10 +111,10 @@ git push
 
 ### Підтвердження виконання
 
-- [LeetCode 1491 — Accepted, 43/43 тести](evidence/leetcode/1491-average-salary.jpg).
-- [LeetCode 2894 — Accepted, 737/737 тестів](evidence/leetcode/2894-sums-difference.jpg).
-- [DevOps — 3 скриншоти команд і результатів](evidence/devops/practice-3/).
-- [Git — 3 скриншоти staging area, часткового додавання та індексу](evidence/git/practice-3/).
+- [LeetCode 1491 — Accepted, 43/43 тести](screenshots/h03/t1-leetcode.jpg).
+- [LeetCode 2894 — Accepted, 737/737 тестів](screenshots/h03/t2-leetcode.jpg).
+- [DevOps — 3 скриншоти команд і результатів](screenshots/h03/).
+- [Git — 3 скриншоти staging area, часткового додавання та індексу](screenshots/h03/).
 - [Відповіді для дискусії](docs/discussion-3.md).
 
 Скриншоти отримано під час виконання зі смартфона. Панелі телефона й браузера обрізано,
@@ -137,8 +139,8 @@ git push
 
 ### Підтвердження виконання
 
-- [LeetCode 461 — Accepted, 149/149 тестів](evidence/leetcode/461-hamming-distance.jpg).
-- [LeetCode 476 — Accepted, 154/154 тести](evidence/leetcode/476-number-complement.jpg).
+- [LeetCode 461 — Accepted, 149/149 тестів](screenshots/h04/t1-leetcode.jpg).
+- [LeetCode 476 — Accepted, 154/154 тести](screenshots/h04/t2-leetcode.jpg).
 - [Git — 5 скриншотів remote, tracking, відхиленого push та успішного злиття](docs/evidence-4.md).
 - [DevOps — 5 скриншотів перенаправлення, конвеєрів, stdout/stderr і пошуку](docs/evidence-4.md#devops).
 
@@ -162,8 +164,8 @@ git push
 
 - [1913 — Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/).
 - [977 — Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/).
-- [1913 — Accepted, 96/96 тестів](evidence/leetcode/1913-maximum-product-difference.jpg).
-- [977 — Accepted, 137/137 тестів](evidence/leetcode/977-sorted-squares.jpg).
+- [1913 — Accepted, 96/96 тестів](screenshots/h05/t1-leetcode.jpg).
+- [977 — Accepted, 137/137 тестів](screenshots/h05/t2-leetcode.jpg).
 
 ### DevOps, Git і дискусія
 
@@ -194,8 +196,8 @@ Git-вправа використовує лише тимчасові локал
 
 - Розв'язки Java: `src/main/java/homework/h06/T1.java` і `T2.java`.
 - Автоматичні тести: `src/test/java/homework/h06/`.
-- [242 — Accepted, 56/56 тестів](evidence/leetcode/242-valid-anagram.jpg).
-- [125 — Accepted, 492/492 тести](evidence/leetcode/125-valid-palindrome.jpg).
+- [242 — Accepted, 56/56 тестів](screenshots/h06/t1-leetcode.jpg).
+- [125 — Accepted, 492/492 тести](screenshots/h06/t2-leetcode.jpg).
 - [Скриншоти LeetCode](docs/evidence-6.md).
 - [DevOps — 11 скриншотів і пояснення мобільних адаптацій](docs/evidence-6.md#devops).
 - [Git — 11 скриншотів, історія, пошук рядків і тег](docs/evidence-6.md#git).

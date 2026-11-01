@@ -9,13 +9,13 @@
 
 Результат: **Accepted, 149/149 тестів**.
 
-![LeetCode 461: Accepted](../evidence/leetcode/461-hamming-distance.jpg)
+![LeetCode 461: Accepted](../screenshots/h04/t1-leetcode.jpg)
 
 ### 476 — Number Complement
 
 Результат: **Accepted, 154/154 тести**.
 
-![LeetCode 476: Accepted](../evidence/leetcode/476-number-complement.jpg)
+![LeetCode 476: Accepted](../screenshots/h04/t2-leetcode.jpg)
 
 ## Git
 
@@ -24,14 +24,14 @@
 
 ### 1. Початковий push, адреси remote та tracking
 
-![Початковий push і tracking](../evidence/git/practice-4/01-remote-tracking.jpg)
+![Початковий push і tracking](../screenshots/h04/git-01-remote-tracking.jpg)
 
 ### 2. Навмисно відхилений push
 
 Віддалена копія вже містить інший коміт. Git правильно відхиляє push з локальної копії,
 яка ще не отримала ці зміни. Це очікуваний результат вправи, а не незавершена помилка.
 
-![Очікуване відхилення push](../evidence/git/practice-4/02-rejected-push.jpg)
+![Очікуване відхилення push](../screenshots/h04/git-02-rejected-push.jpg)
 
 ### 3. Успішне злиття, граф історії та push
 
@@ -39,15 +39,15 @@
 виконано успішно. Повідомлення про очікування редактора не зупинило команду:
 нижче видно завершене злиття та надсилання комітів.
 
-![Злиття і успішний push](../evidence/git/practice-4/03-merge-and-push.jpg)
+![Злиття і успішний push](../screenshots/h04/git-03-merge-and-push.jpg)
 
 ### 4. Додатковий remote, fetch, видалення remote та конфігурація
 
-![Upstream і конфігурація](../evidence/git/practice-4/04-upstream-config.jpg)
+![Upstream і конфігурація](../screenshots/h04/git-04-upstream-config.jpg)
 
 ### 5. Завершення сценарію
 
-![Завершення Git-вправи](../evidence/git/practice-4/05-completed.jpg)
+![Завершення Git-вправи](../screenshots/h04/git-05-completed.jpg)
 
 ## DevOps
 
@@ -57,32 +57,32 @@
 
 `>` перезаписує вміст файла, а `>>` додає рядок до наявного вмісту.
 
-![Перезапис і дописування](../evidence/devops/practice-4/01-overwrite-append.jpg)
+![Перезапис і дописування](../screenshots/h04/devops-01-overwrite-append.jpg)
 
 ### 2. Конвеєри, grep, sort та uniq
 
 Обидва способи підрахунку рядків із цифрою `5` дають **38**.
 Сортування й підрахунок повторів імен дають: Іван — 3, Олена — 2, Петро — 1.
 
-![Конвеєри та підрахунок повторів](../evidence/devops/practice-4/02-pipes-grep-sort-uniq.jpg)
+![Конвеєри та підрахунок повторів](../screenshots/h04/devops-02-pipes-grep-sort-uniq.jpg)
 
 ### 3. Окреме перенаправлення stdout і stderr
 
 Помилка про відсутню `/no/such/dir` викликана навмисно для перевірки потоків:
 `>` перенаправляє звичайний вивід, а `2>` — повідомлення про помилку.
 
-![Розділення stdout і stderr](../evidence/devops/practice-4/03-stdout-stderr.jpg)
+![Розділення stdout і stderr](../screenshots/h04/devops-03-stdout-stderr.jpg)
 
 ### 4. Об'єднання потоків і конвеєр
 
 `2>&1` об'єднує stderr зі stdout. Без об'єднання конвеєр рахує **6** рядків,
 а з повідомленням про помилку — **7**. Перенаправлення `2>/dev/null` приховує помилку.
 
-![Об'єднання потоків](../evidence/devops/practice-4/04-combined-streams.jpg)
+![Об'єднання потоків](../screenshots/h04/devops-04-combined-streams.jpg)
 
 ### 5. Пошук файлів і тексту, завершення сценарію
 
 Знайдено **5** текстових файлів та **3** рядки з іменем «Іван».
 Унизу показано завершення сценарію й розташування навчальних файлів.
 
-![Пошук і завершення сценарію](../evidence/devops/practice-4/05-find-grep-completed.jpg)
+![Пошук і завершення сценарію](../screenshots/h04/devops-05-find-grep-completed.jpg)

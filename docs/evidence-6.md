@@ -7,25 +7,25 @@ LeetCode; панелі браузера й телефона прибрані. Т
 
 **Accepted — 56/56 тестів.**
 
-![LeetCode 242: Accepted](../evidence/leetcode/242-valid-anagram.jpg)
+![LeetCode 242: Accepted](../screenshots/h06/t1-leetcode.jpg)
 
 ## LeetCode 125 — Valid Palindrome
 
 **Accepted — 492/492 тестів.**
 
-![LeetCode 125: Accepted](../evidence/leetcode/125-valid-palindrome.jpg)
+![LeetCode 125: Accepted](../screenshots/h06/t2-leetcode.jpg)
 
 ## DevOps
 
 | Завдання | Підтвердження |
 | --- | --- |
-| 1. Програма та два процеси | [Файл `sleep` і два різні PID](../evidence/devops/practice-6/01-program-and-processes.jpg) |
-| 2. Прочитати таблицю процесів | [PID, користувач, CPU, пам'ять і команда](../evidence/devops/practice-6/02-process-table.jpg) |
-| 3. Звичайне та примусове завершення | [`Terminated` після `kill` і `Killed` після `kill -9`](../evidence/devops/practice-6/03-term-and-kill.jpg) |
-| 4. Передній план, зупинка та продовження | [Переривання через SIGINT](../evidence/devops/practice-6/04-foreground-interrupt.jpg), [SIGTSTP, `fg`, `bg`, `Stopped` і `Running`](../evidence/devops/practice-6/05-stop-and-resume.jpg) |
-| 5. HTTP-сервер | [Передній план і переривання](../evidence/devops/practice-6/06-http-foreground.jpg), [фон, перевірка PID і завершення](../evidence/devops/practice-6/07-http-background.jpg) |
-| 6. Пошук і завершення за назвою | [`pgrep`, `pkill` і відсутність процесів після завершення](../evidence/devops/practice-6/08-pgrep-and-pkill.jpg) |
-| 7. Навантаження системи | [Інтерактивний `top`: CPU](../evidence/devops/practice-6/09-top-interactive-cpu.jpg), [пам'ять](../evidence/devops/practice-6/10-top-interactive-memory.jpg), [читабельні колонки та два сортування](../evidence/devops/practice-6/11-top-readable-cpu-memory.jpg) |
+| 1. Програма та два процеси | [Файл `sleep` і два різні PID](../screenshots/h06/devops-01-program-and-processes.jpg) |
+| 2. Прочитати таблицю процесів | [PID, користувач, CPU, пам'ять і команда](../screenshots/h06/devops-02-process-table.jpg) |
+| 3. Звичайне та примусове завершення | [`Terminated` після `kill` і `Killed` після `kill -9`](../screenshots/h06/devops-03-term-and-kill.jpg) |
+| 4. Передній план, зупинка та продовження | [Переривання через SIGINT](../screenshots/h06/devops-04-foreground-interrupt.jpg), [SIGTSTP, `fg`, `bg`, `Stopped` і `Running`](../screenshots/h06/devops-05-stop-and-resume.jpg) |
+| 5. HTTP-сервер | [Передній план і переривання](../screenshots/h06/devops-06-http-foreground.jpg), [фон, перевірка PID і завершення](../screenshots/h06/devops-07-http-background.jpg) |
+| 6. Пошук і завершення за назвою | [`pgrep`, `pkill` і відсутність процесів після завершення](../screenshots/h06/devops-08-pgrep-and-pkill.jpg) |
+| 7. Навантаження системи | [Інтерактивний `top`: CPU](../screenshots/h06/devops-09-top-interactive-cpu.jpg), [пам'ять](../screenshots/h06/devops-10-top-interactive-memory.jpg), [читабельні колонки та два сортування](../screenshots/h06/devops-11-top-readable-cpu-memory.jpg) |
 
 ### Що адаптовано для телефона
 
@@ -56,14 +56,14 @@ Shell. Помилковий знімок службової історії Repli
 
 | Завдання | Підтвердження |
 | --- | --- |
-| 1. Варіанти журналу | [Повний формат комітів, короткий журнал і граф](../evidence/git/practice-6/01-log-views.jpg) |
-| 2. Фільтри журналу | [Статистика, автор, дата й історія `readme.md`](../evidence/git/practice-6/02-log-filters.jpg) |
-| 3. Хеш і відносне ім'я | [`git show 184c1be`](../evidence/git/practice-6/03-show-by-hash.jpg), [`git show HEAD~2`](../evidence/git/practice-6/04-show-relative.jpg) — однаковий коміт |
-| 4. Походження рядка | [Автори, дати та хеші з `blame`](../evidence/git/practice-6/05-blame.jpg), [зміни README у знайденому коміті](../evidence/git/practice-6/06-show-readme.jpg) |
-| 5. Пошук появи тексту | [`log -S "Практична 6"` знаходить `56e98bf`](../evidence/git/practice-6/07-pickaxe-search.jpg) |
-| 6. Тег | [`tag: v1.0.0` у журналі](../evidence/git/practice-6/11-author-counts-and-tag.jpg) |
-| 7. Власні формати | [Два формати журналу](../evidence/git/practice-6/09-custom-log-formats.jpg) |
-| 8. Загальний огляд історії | [Граф `--all`](../evidence/git/practice-6/10-all-branches-graph.jpg), [кількість комітів за авторами](../evidence/git/practice-6/11-author-counts-and-tag.jpg) |
+| 1. Варіанти журналу | [Повний формат комітів, короткий журнал і граф](../screenshots/h06/git-01-log-views.jpg) |
+| 2. Фільтри журналу | [Статистика, автор, дата й історія `readme.md`](../screenshots/h06/git-02-log-filters.jpg) |
+| 3. Хеш і відносне ім'я | [`git show 184c1be`](../screenshots/h06/git-03-show-by-hash.jpg), [`git show HEAD~2`](../screenshots/h06/git-04-show-relative.jpg) — однаковий коміт |
+| 4. Походження рядка | [Автори, дати та хеші з `blame`](../screenshots/h06/git-05-blame.jpg), [зміни README у знайденому коміті](../screenshots/h06/git-06-show-readme.jpg) |
+| 5. Пошук появи тексту | [`log -S "Практична 6"` знаходить `56e98bf`](../screenshots/h06/git-07-pickaxe-search.jpg) |
+| 6. Тег | [`tag: v1.0.0` у журналі](../screenshots/h06/git-11-author-counts-and-tag.jpg) |
+| 7. Власні формати | [Два формати журналу](../screenshots/h06/git-09-custom-log-formats.jpg) |
+| 8. Загальний огляд історії | [Граф `--all`](../screenshots/h06/git-10-all-branches-graph.jpg), [кількість комітів за авторами](../screenshots/h06/git-11-author-counts-and-tag.jpg) |
 
 ### Межі показаного виводу
 
@@ -76,7 +76,7 @@ Shell. Помилковий знімок службової історії Repli
 
 ### Публікація тега
 
-[Початковий push із мобільного Shell](../evidence/git/practice-6/08-tag-shell-push-error.jpg)
+[Початковий push із мобільного Shell](../screenshots/h06/git-08-tag-shell-push-error.jpg)
 не пройшов авторизацію. Локальний тег при цьому створився.
 Після цього тег успішно опубліковано через авторизований Git-транспорт агента;
 перевірка віддаленого `refs/tags/v1.0.0` підтвердила цільовий коміт:

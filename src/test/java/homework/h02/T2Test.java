@@ -1,31 +1,51 @@
 package homework.h02;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.jupiter.api.Test;
 
 class T2Test {
-    private final T2 solution = new T2();
+  private final T2 solution = new T2();
 
-    @Test
-    void zeroAndNumbersWithoutTrailingZeroRemainTheSame() {
-        assertTrue(solution.isSameAfterReversals(0));
-        assertTrue(solution.isSameAfterReversals(1));
-        assertTrue(solution.isSameAfterReversals(526));
-        assertTrue(solution.isSameAfterReversals(1001));
-    }
+  @Test
+  void exampleOne() {
+    assertThat(solution.isSameAfterReversals(526)).isTrue();
+  }
 
-    @Test
-    void positiveNumbersWithTrailingZeroChangeAfterDoubleReversal() {
-        assertFalse(solution.isSameAfterReversals(10));
-        assertFalse(solution.isSameAfterReversals(100));
-        assertFalse(solution.isSameAfterReversals(1800));
-    }
+  @Test
+  void exampleTwo() {
+    assertThat(solution.isSameAfterReversals(1800)).isFalse();
+  }
 
-    @Test
-    void rejectsNegativeInput() {
-        assertThrows(IllegalArgumentException.class, () -> solution.isSameAfterReversals(-1));
-    }
+  @Test
+  void exampleThreeAndMinimumAllowedNumber() {
+    assertThat(solution.isSameAfterReversals(0)).isTrue();
+  }
+
+  @Test
+  void maximumAllowedNumber() {
+    assertThat(solution.isSameAfterReversals(1_000_000)).isFalse();
+  }
+
+  @Test
+  void singleDigit() {
+    assertThat(solution.isSameAfterReversals(1)).isTrue();
+  }
+
+  @Test
+  void internalZerosDoNotMatter() {
+    assertThat(solution.isSameAfterReversals(1001)).isTrue();
+  }
+
+  @Test
+  void singleTrailingZeroChangesTheNumber() {
+    assertThat(solution.isSameAfterReversals(10)).isFalse();
+  }
+
+  @Test
+  void rejectsNegativeNumber() {
+    assertThatThrownBy(() -> solution.isSameAfterReversals(-1))
+        .isInstanceOf(IllegalArgumentException.class);
+  }
 }

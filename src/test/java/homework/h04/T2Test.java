@@ -1,29 +1,52 @@
 package homework.h04;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.jupiter.api.Test;
 
 class T2Test {
-    private final T2 solution = new T2();
+  private final T2 solution = new T2();
 
-    @Test
-    void flipsOnlySignificantBits() {
-        assertEquals(2, solution.findComplement(5));
-        assertEquals(0, solution.findComplement(1));
-        assertEquals(1, solution.findComplement(2));
-    }
+  @Test
+  void exampleOne() {
+    assertThat(solution.findComplement(5)).isEqualTo(2);
+  }
 
-    @Test
-    void handlesPowersOfTwoAndMaximumPositiveInt() {
-        assertEquals(0, solution.findComplement(7));
-        assertEquals(1_073_741_823, solution.findComplement(1_073_741_824));
-        assertEquals(0, solution.findComplement(Integer.MAX_VALUE));
-    }
+  @Test
+  void exampleTwoAndMinimumAllowedNumber() {
+    assertThat(solution.findComplement(1)).isZero();
+  }
 
-    @Test
-    void rejectsZero() {
-        assertThrows(IllegalArgumentException.class, () -> solution.findComplement(0));
-    }
+  @Test
+  void maximumAllowedNumber() {
+    assertThat(solution.findComplement(Integer.MAX_VALUE)).isZero();
+  }
+
+  @Test
+  void smallestPowerOfTwoAboveOne() {
+    assertThat(solution.findComplement(2)).isEqualTo(1);
+  }
+
+  @Test
+  void largestAllowedPowerOfTwo() {
+    assertThat(solution.findComplement(1 << 30)).isEqualTo(1_073_741_823);
+  }
+
+  @Test
+  void allSignificantBitsAreSet() {
+    assertThat(solution.findComplement(7)).isZero();
+  }
+
+  @Test
+  void rejectsZero() {
+    assertThatThrownBy(() -> solution.findComplement(0))
+        .isInstanceOf(IllegalArgumentException.class);
+  }
+
+  @Test
+  void rejectsNegativeNumber() {
+    assertThatThrownBy(() -> solution.findComplement(-1))
+        .isInstanceOf(IllegalArgumentException.class);
+  }
 }

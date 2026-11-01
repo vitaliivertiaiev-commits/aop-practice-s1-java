@@ -1,29 +1,46 @@
 package homework.h02;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.jupiter.api.Test;
 
 class T1Test {
-    private final T1 solution = new T1();
+  private final T1 solution = new T1();
 
-    @Test
-    void computesDigitalRoots() {
-        assertEquals(2, solution.addDigits(38));
-        assertEquals(1, solution.addDigits(10));
-        assertEquals(9, solution.addDigits(9));
-        assertEquals(9, solution.addDigits(99));
-    }
+  @Test
+  void exampleOne() {
+    assertThat(solution.addDigits(38)).isEqualTo(2);
+  }
 
-    @Test
-    void handlesZeroAndLargestInt() {
-        assertEquals(0, solution.addDigits(0));
-        assertEquals(1, solution.addDigits(Integer.MAX_VALUE));
-    }
+  @Test
+  void exampleTwoAndMinimumAllowedNumber() {
+    assertThat(solution.addDigits(0)).isZero();
+  }
 
-    @Test
-    void rejectsNegativeInput() {
-        assertThrows(IllegalArgumentException.class, () -> solution.addDigits(-1));
-    }
+  @Test
+  void maximumAllowedNumber() {
+    assertThat(solution.addDigits(Integer.MAX_VALUE)).isEqualTo(1);
+  }
+
+  @Test
+  void singleDigit() {
+    assertThat(solution.addDigits(1)).isEqualTo(1);
+    assertThat(solution.addDigits(9)).isEqualTo(9);
+  }
+
+  @Test
+  void multipleOfNine() {
+    assertThat(solution.addDigits(99)).isEqualTo(9);
+  }
+
+  @Test
+  void numberEndingInZero() {
+    assertThat(solution.addDigits(10)).isEqualTo(1);
+  }
+
+  @Test
+  void rejectsNegativeNumber() {
+    assertThatThrownBy(() -> solution.addDigits(-1)).isInstanceOf(IllegalArgumentException.class);
+  }
 }

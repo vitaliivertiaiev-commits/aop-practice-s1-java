@@ -90,9 +90,9 @@ shell.
 
 ## Скриншоти виконання
 
-- [Довідка, man та розміри файлів](../evidence/devops/practice-3/01-help-man-and-sizes.jpg).
-- [Помилки та коди завершення](../evidence/devops/practice-3/02-errors-and-exit-codes.jpg).
-- [Ланцюжки && та типи команд](../evidence/devops/practice-3/03-chains-and-command-types.jpg).
+- [Довідка, man та розміри файлів](../screenshots/h03/devops-01-help-man-and-sizes.jpg).
+- [Помилки та коди завершення](../screenshots/h03/devops-02-errors-and-exit-codes.jpg).
+- [Ланцюжки && та типи команд](../screenshots/h03/devops-03-chains-and-command-types.jpg).
 
 Попередження `troff: cannot adjust line` на вузькому екрані стосується форматування
 сторінки посібника. Знайдений опис `-h, --human-readable` залишається читабельним.

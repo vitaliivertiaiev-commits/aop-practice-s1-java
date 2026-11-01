@@ -99,4 +99,4 @@ git push
 
 <https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java>
 
-Справжній скриншот сторінки коміту GitHub збережено в `evidence/github-commit.png`.
+Справжній скриншот сторінки коміту GitHub збережено в `screenshots/h01/git-04-github-commit.png`.

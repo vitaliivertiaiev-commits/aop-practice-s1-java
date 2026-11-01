@@ -9,13 +9,13 @@
 
 **Accepted — 96/96 тестів.**
 
-![LeetCode 1913: Accepted](../evidence/leetcode/1913-maximum-product-difference.jpg)
+![LeetCode 1913: Accepted](../screenshots/h05/t1-leetcode.jpg)
 
 ### 977 — Squares of a Sorted Array
 
 **Accepted — 137/137 тестів.**
 
-![LeetCode 977: Accepted](../evidence/leetcode/977-sorted-squares.jpg)
+![LeetCode 977: Accepted](../screenshots/h05/t2-leetcode.jpg)
 
 ## DevOps
 
@@ -24,23 +24,23 @@
 
 ### 1. Змінні та лапки
 
-![Змінні, присвоєння та лапки](../evidence/devops/practice-5/01-variables-quotes.jpg)
+![Змінні, присвоєння та лапки](../screenshots/h05/devops-01-variables-quotes.jpg)
 
 ### 2. Shebang, аргументи й права на виконання
 
-![Запуск greet.sh та chmod](../evidence/devops/practice-5/02-shebang-arguments.jpg)
+![Запуск greet.sh та chmod](../screenshots/h05/devops-02-shebang-arguments.jpg)
 
 ### 3. `./script.sh` і `bash script.sh`
 
-![Порівняння способів запуску](../evidence/devops/practice-5/03-execution-methods.jpg)
+![Порівняння способів запуску](../screenshots/h05/devops-03-execution-methods.jpg)
 
 ### 4. Безпечна зупинка після помилки
 
-![Порівняння unsafe.sh та safe.sh](../evidence/devops/practice-5/04-safe-scripts.jpg)
+![Порівняння unsafe.sh та safe.sh](../screenshots/h05/devops-04-safe-scripts.jpg)
 
 ### 5. `set -u` і підрахунок файлів за розширенням
 
-![Перевірка змінної та count.sh](../evidence/devops/practice-5/05-strict-mode-count.jpg)
+![Перевірка змінної та count.sh](../screenshots/h05/devops-05-strict-mode-count.jpg)
 
 ## Git
 
@@ -49,24 +49,24 @@
 
 ### 1. Ігнорування збірки та локальних налаштувань
 
-![Початковий статус і .gitignore](../evidence/git/practice-5/01-gitignore-basics.jpg)
+![Початковий статус і .gitignore](../screenshots/h05/git-01-gitignore-basics.jpg)
 
 ### 2. `.env`: відстеження та `git rm --cached`
 
-![Вилучення env-файла з індексу без видалення з диска](../evidence/git/practice-5/02-env-cached.jpg)
+![Вилучення env-файла з індексу без видалення з диска](../screenshots/h05/git-02-env-cached.jpg)
 
 ### 3. Шаблони й винятки
 
-![Шаблони .gitignore](../evidence/git/practice-5/03-patterns-clean.jpg)
+![Шаблони .gitignore](../screenshots/h05/git-03-patterns-clean.jpg)
 
 ### 4. `git check-ignore` та безпечний `git clean`
 
 Спершу показано `git clean -n`, потім — очищення лише навчального репозиторію.
 
-![Перевірка правил та очищення](../evidence/git/practice-5/04-check-ignore-clean.jpg)
+![Перевірка правил та очищення](../screenshots/h05/git-04-check-ignore-clean.jpg)
 
 ### 5. Відстеження файла у двох гілках
 
-![Файл на гілці draft та відновлення на main](../evidence/git/practice-5/05-branch-move.jpg)
+![Файл на гілці draft та відновлення на main](../screenshots/h05/git-05-branch-move.jpg)
 
-![Перевірка дерев гілок і чистого статусу](../evidence/git/practice-5/06-branch-complete.jpg)
+![Перевірка дерев гілок і чистого статусу](../screenshots/h05/git-06-branch-complete.jpg)
