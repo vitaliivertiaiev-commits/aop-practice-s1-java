@@ -17,6 +17,8 @@
 
 ![LeetCode 977: Accepted](../screenshots/h05/t2-leetcode.jpg)
 
+Профіль LeetCode: [20/4109 задач розв'язано](../screenshots/leetcode-total-current.jpg).
+
 ## DevOps
 
 Усі п'ять частин виконано: змінні й лапки; shebang та аргументи; права доступу;

@@ -45,6 +45,7 @@
 - [2824: код і позначка Solved](../screenshots/h08/t2-leetcode-solved.jpg).
 
 Обидві задачі позначені як розв'язані.
+Профіль LeetCode: [20/4109 задач розв'язано](../screenshots/leetcode-total-current.jpg).
 
 ## DevOps
 

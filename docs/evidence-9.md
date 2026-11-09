@@ -79,3 +79,5 @@
   Java, статус **Solved**.
 - [1431 — Kids With the Greatest Number of Candies](../screenshots/h09/leetcode-1431.jpg):
   Java, статус **Solved**.
+
+Профіль LeetCode: [20/4109 задач розв'язано](../screenshots/leetcode-total-current.jpg).

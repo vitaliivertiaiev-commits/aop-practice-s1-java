@@ -14,6 +14,8 @@
 
 ![LeetCode 125: Accepted](../screenshots/h06/t2-leetcode.jpg)
 
+Профіль LeetCode: [20/4109 задач розв'язано](../screenshots/leetcode-total-current.jpg).
+
 ## DevOps
 
 | Завдання | Підтвердження |
