@@ -295,4 +295,3 @@ Git-вправа використовує лише тимчасові локал
 - [Результати та перевірки](docs/evidence-11.md).
 - [Історичний знімок профілю від 9 листопада: 20/4109](screenshots/leetcode-total-2026-11-09.jpg).
 - [Поточний профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
-- [DevOps і Git: знімки виконання команд](docs/evidence-11.md).
