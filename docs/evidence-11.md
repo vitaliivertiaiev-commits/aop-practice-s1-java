@@ -37,7 +37,8 @@
 ## DevOps і Git
 
 - DevOps: [залежність і збірка](../screenshots/h11/devops-01-maven-dependency.jpg),
-  [кеш Maven і Gson](../screenshots/h11/devops-02-cache-and-gson.jpg).
+  [кеш Maven і Gson](../screenshots/h11/devops-02-cache-and-gson.jpg),
+  [дерево Gradle](../screenshots/h11/devops-03-gradle-dependencies.jpg).
 - Git: [конфлікт і маркери](../screenshots/h11/git-01-conflict-markers.jpg),
   [ручне розв'язання](../screenshots/h11/git-02-manual-resolution.jpg),
   [`--ours` та `--theirs`](../screenshots/h11/git-03-ours-theirs.jpg),

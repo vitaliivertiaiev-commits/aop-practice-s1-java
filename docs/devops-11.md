@@ -20,3 +20,8 @@
 Окремо виконав `mvn dependency:get -Dartifact=com.google.code.gson:gson:2.10.1`
 і знайшов завантажений Gson у локальному Maven-кеші. До `pom.xml` цю бібліотеку
 не додавав.
+
+Для порівняння створив окремий проєкт командою `gradle init`, додав ту саму
+залежність до `app/build.gradle` і виконав
+`./gradlew :app:dependencies --configuration runtimeClasspath`. У дереві Gradle
+також відобразився `commons-lang3:3.14.0`.

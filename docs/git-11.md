@@ -17,5 +17,6 @@
 
 Ще двічі створив конфлікт і перевірив `git checkout --ours config.txt`
 та `git checkout --theirs config.txt`: перша команда залишила версію `main`,
-друга — версію `dev`. Наприкінці знову виконав `git merge --abort`
+друга — версію `dev`. Після кожного вибору виконав `git add config.txt`
+і `git merge --continue`. Наприкінці знову виконав `git merge --abort`
 і перевірив, що робоча тека чиста.

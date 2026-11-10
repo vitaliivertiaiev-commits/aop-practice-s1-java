@@ -42,6 +42,4 @@
 
 ## LeetCode
 
-[Профіль на момент практичної 7: 14 розв'язаних задач](../screenshots/leetcode-total.jpg).
-
 Поточний профіль LeetCode: [22 задачі розв'язано](../screenshots/leetcode-total-current.jpg).
