@@ -17,7 +17,7 @@
 
 ![LeetCode 977: Accepted](../screenshots/h05/t2-leetcode.jpg)
 
-Профіль LeetCode: [20/4109 задач розв'язано](../screenshots/leetcode-total-current.jpg).
+Профіль LeetCode: [22 задачі розв'язано](../screenshots/leetcode-total-current.jpg).
 
 ## DevOps
 

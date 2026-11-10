@@ -71,4 +71,4 @@
 - [3304 — Find the K-th Character in String Game I](../screenshots/h10/leetcode-3304.jpg) — Solved.
 - [344 — Reverse String](../screenshots/h10/leetcode-344.jpg) — Solved.
 
-Профіль LeetCode: [20/4109 задач розв'язано](../screenshots/leetcode-total-current.jpg).
+Профіль LeetCode: [22 задачі розв'язано](../screenshots/leetcode-total-current.jpg).

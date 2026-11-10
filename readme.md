@@ -65,7 +65,7 @@ mvn spotless:check
 
 - [2413 — Accepted](screenshots/h01/t1-leetcode.jpg).
 - [1523 — Accepted](screenshots/h01/t2-leetcode.jpg).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 
 ## Відправлення на LeetCode
 
@@ -102,7 +102,7 @@ git push
 
 - [LeetCode 258 — Accepted](screenshots/h02/t1-leetcode.jpg).
 - [LeetCode 2119 — Accepted](screenshots/h02/t2-leetcode.jpg).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 - [DevOps — 8 скриншотів команд і результатів](screenshots/h02/).
 - [Git — 5 скриншотів команд і результатів](screenshots/h02/).
 - [Відповіді для дискусії](docs/discussion-2.md).
@@ -133,7 +133,7 @@ git push
 
 - [LeetCode 1491 — Accepted, 43/43 тести](screenshots/h03/t1-leetcode.jpg).
 - [LeetCode 2894 — Accepted, 737/737 тестів](screenshots/h03/t2-leetcode.jpg).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 - [DevOps — 3 скриншоти команд і результатів](screenshots/h03/).
 - [Git — 3 скриншоти staging area, часткового додавання та індексу](screenshots/h03/).
 - [Відповіді для дискусії](docs/discussion-3.md).
@@ -160,7 +160,7 @@ git push
 
 - [LeetCode 461 — Accepted, 149/149 тестів](screenshots/h04/t1-leetcode.jpg).
 - [LeetCode 476 — Accepted, 154/154 тести](screenshots/h04/t2-leetcode.jpg).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 - [Git — 5 скриншотів remote, tracking, відхиленого push та успішного злиття](docs/evidence-4.md).
 - [DevOps — 5 скриншотів перенаправлення, конвеєрів, stdout/stderr і пошуку](docs/evidence-4.md#devops).
 
@@ -186,7 +186,7 @@ git push
 - [977 — Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/).
 - [1913 — Accepted, 96/96 тестів](screenshots/h05/t1-leetcode.jpg).
 - [977 — Accepted, 137/137 тестів](screenshots/h05/t2-leetcode.jpg).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 
 ### DevOps, Git і дискусія
 
@@ -219,7 +219,7 @@ Git-вправа використовує лише тимчасові локал
 - Автоматичні тести: `src/test/java/homework/h06/`.
 - [242 — Accepted, 56/56 тестів](screenshots/h06/t1-leetcode.jpg).
 - [125 — Accepted, 492/492 тести](screenshots/h06/t2-leetcode.jpg).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 - [Скриншоти LeetCode](docs/evidence-6.md).
 - [DevOps — 11 скриншотів і пояснення мобільних адаптацій](docs/evidence-6.md#devops).
 - [Git — 11 скриншотів, історія, пошук рядків і тег](docs/evidence-6.md#git).
@@ -239,7 +239,7 @@ Git-вправа використовує лише тимчасові локал
 - [Результати, тести й LeetCode](docs/evidence-7.md).
 - [Скриншоти виконання](screenshots/h07/).
 - [Профіль на момент Практичної 7: 14 розв'язаних задач](screenshots/leetcode-total.jpg).
-- [Поточний профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Поточний профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 
 ## Практична 8: Патерни роботи з масивами
 
@@ -252,7 +252,7 @@ Git-вправа використовує лише тимчасові локал
 - [Git: скасування змін](docs/git-8.md).
 - [Дискусія: шість відповідей](docs/discussion-8.md).
 - [Результати](docs/evidence-8.md).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 
 ## Практична 9: Структура коду, функції та декомпозиція
 
@@ -265,7 +265,7 @@ Git-вправа використовує лише тимчасові локал
 - [Git: гілки](docs/git-9.md).
 - [Дискусія: шість відповідей](docs/discussion-9.md).
 - [Результати](docs/evidence-9.md).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 
 ## Практична 10: Рекурсія
 
@@ -278,7 +278,7 @@ Git-вправа використовує лише тимчасові локал
 - [Git: злиття гілок](docs/git-10.md).
 - [Дискусія: шість відповідей](docs/discussion-10.md).
 - [Результати](docs/evidence-10.md).
-- [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 
 ## Практична 11: Аналіз алгоритмів
 
@@ -293,5 +293,6 @@ Git-вправа використовує лише тимчасові локал
 - [Git: конфлікти злиття](docs/git-11.md).
 - [Дискусія: сім відповідей](docs/discussion-11.md).
 - [Результати та перевірки](docs/evidence-11.md).
-- [Останній наявний знімок профілю LeetCode: 20/4109](screenshots/leetcode-total-current.jpg).
+- [Історичний знімок профілю від 9 листопада: 20/4109](screenshots/leetcode-total-2026-11-09.jpg).
+- [Поточний профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
 - [DevOps і Git: знімки виконання команд](docs/evidence-11.md).

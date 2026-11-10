@@ -31,8 +31,8 @@
 - [DevOps: залежності Maven](devops-11.md).
 - [Git: конфлікти злиття](git-11.md).
 - [Відкрита дискусія](discussion-11.md).
-- Профіль LeetCode: [20/4109 задач розв'язано](../screenshots/leetcode-total-current.jpg)
-  на знімку від 9 листопада.
+- Профіль LeetCode: [22 задачі розв'язано](../screenshots/leetcode-total-current.jpg).
+- Історичний профіль від 9 листопада: [20/4109](../screenshots/leetcode-total-2026-11-09.jpg).
 
 ## DevOps
 
