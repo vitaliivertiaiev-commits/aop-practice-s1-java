@@ -1,6 +1,6 @@
-# Практичні роботи 1–10
+# Практичні роботи 1–11
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–10 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–11 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -16,6 +16,7 @@
 - `src/main/java/homework/h08/` — LeetCode 485 та 2824, Практична 8.
 - `src/main/java/homework/h09/` — LeetCode 1512 та 1431, Практична 9.
 - `src/main/java/homework/h10/` — LeetCode 3304 та 344, Практична 10.
+- `src/main/java/homework/h11/` — LeetCode 268 та 169, Практична 11.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -32,6 +33,8 @@
 - [Результати Практичної 9](docs/evidence-9.md) — рішення, тести та скриншоти.
 - `docs/devops-10.md`, `docs/git-10.md`, `docs/discussion-10.md` — матеріали Практичної 10.
 - [Результати Практичної 10](docs/evidence-10.md) — рішення, тести та скриншоти.
+- `docs/devops-11.md`, `docs/git-11.md`, `docs/discussion-11.md` — матеріали Практичної 11.
+- [Результати Практичної 11](docs/evidence-11.md) — рішення й автоматичні тести.
 - `screenshots/hNN/` — скриншоти відповідних занять; папки додаються разом зі справжніми знімками.
 
 ## Як перевірити проєкт
@@ -276,3 +279,17 @@ Git-вправа використовує лише тимчасові локал
 - [Дискусія: шість відповідей](docs/discussion-10.md).
 - [Результати](docs/evidence-10.md).
 - [Профіль LeetCode: 20/4109 задач розв'язано](screenshots/leetcode-total-current.jpg).
+
+## Практична 11: Аналіз алгоритмів
+
+- [268 — Missing Number](https://leetcode.com/problems/missing-number/):
+  `src/main/java/homework/h11/T1.java` — пошук відсутнього числа через XOR.
+- [169 — Majority Element](https://leetcode.com/problems/majority-element/):
+  `src/main/java/homework/h11/T2.java` — алгоритм голосування Бойєра—Мура.
+- Тести: `src/test/java/homework/h11/`.
+- [DevOps: залежності Maven](docs/devops-11.md).
+- [Git: конфлікти злиття](docs/git-11.md).
+- [Дискусія: сім відповідей](docs/discussion-11.md).
+- [Результати та перевірки](docs/evidence-11.md).
+- [Останній наявний знімок профілю LeetCode: 20/4109](screenshots/leetcode-total-current.jpg).
+- [DevOps і Git: знімки виконання команд](docs/evidence-11.md).
