@@ -33,3 +33,12 @@
 - [Відкрита дискусія](discussion-11.md).
 - Профіль LeetCode: [22 задачі розв'язано](../screenshots/leetcode-total-current.jpg).
 - Історичний профіль від 9 листопада: [20/4109](../screenshots/leetcode-total-2026-11-09.jpg).
+
+## DevOps і Git
+
+- DevOps: [залежність і збірка](../screenshots/h11/devops-01-maven-dependency.jpg),
+  [кеш Maven і Gson](../screenshots/h11/devops-02-cache-and-gson.jpg).
+- Git: [конфлікт і маркери](../screenshots/h11/git-01-conflict-markers.jpg),
+  [ручне розв'язання](../screenshots/h11/git-02-manual-resolution.jpg),
+  [`--ours` та `--theirs`](../screenshots/h11/git-03-ours-theirs.jpg),
+  [скасування злиття](../screenshots/h11/git-04-abort.jpg).

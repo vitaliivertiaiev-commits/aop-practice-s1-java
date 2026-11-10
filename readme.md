@@ -293,5 +293,6 @@ Git-вправа використовує лише тимчасові локал
 - [Git: конфлікти злиття](docs/git-11.md).
 - [Дискусія: сім відповідей](docs/discussion-11.md).
 - [Результати та перевірки](docs/evidence-11.md).
+- [Скриншоти DevOps і Git](docs/evidence-11.md).
 - [Історичний знімок профілю від 9 листопада: 20/4109](screenshots/leetcode-total-2026-11-09.jpg).
 - [Поточний профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
