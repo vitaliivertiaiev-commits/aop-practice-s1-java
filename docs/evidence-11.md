@@ -21,6 +21,11 @@
 На JDK 25.0.2 команда `mvn clean test spotless:check` завершилася успішно:
 218 тестів, помилок і пропусків немає.
 
+## LeetCode
+
+- [268 — Missing Number, Accepted](../screenshots/h11/leetcode-268.jpg).
+- [169 — Majority Element, Accepted](../screenshots/h11/leetcode-169.jpg).
+
 ## Матеріали
 
 - [DevOps: залежності Maven](devops-11.md).

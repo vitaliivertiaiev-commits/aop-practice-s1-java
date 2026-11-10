@@ -287,6 +287,8 @@ Git-вправа використовує лише тимчасові локал
 - [169 — Majority Element](https://leetcode.com/problems/majority-element/):
   `src/main/java/homework/h11/T2.java` — алгоритм голосування Бойєра—Мура.
 - Тести: `src/test/java/homework/h11/`.
+- [268 — Accepted](screenshots/h11/leetcode-268.jpg).
+- [169 — Accepted](screenshots/h11/leetcode-169.jpg).
 - [DevOps: залежності Maven](docs/devops-11.md).
 - [Git: конфлікти злиття](docs/git-11.md).
 - [Дискусія: сім відповідей](docs/discussion-11.md).
