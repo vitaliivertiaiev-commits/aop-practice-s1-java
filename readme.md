@@ -1,6 +1,6 @@
-# Практичні роботи 1–11
+# Практичні роботи 1–12
 
-Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–11 продовжують
+Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–12 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
 
 ## Структура
@@ -17,6 +17,7 @@
 - `src/main/java/homework/h09/` — LeetCode 1512 та 1431, Практична 9.
 - `src/main/java/homework/h10/` — LeetCode 3304 та 344, Практична 10.
 - `src/main/java/homework/h11/` — LeetCode 268 та 169, Практична 11.
+- `src/main/java/homework/h12/` — LeetCode 1051 та 1122, Самостійна 12.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -35,6 +36,8 @@
 - [Результати Практичної 10](docs/evidence-10.md) — рішення, тести та скриншоти.
 - `docs/devops-11.md`, `docs/git-11.md`, `docs/discussion-11.md` — матеріали Практичної 11.
 - [Результати Практичної 11](docs/evidence-11.md) — рішення й автоматичні тести.
+- `docs/devops-12.md` і `docs/git-12.md` — матеріали Самостійної 12.
+- [Результати Самостійної 12](docs/evidence-12.md) — рішення, тести й скриншоти.
 - `screenshots/hNN/` — скриншоти відповідних занять; папки додаються разом зі справжніми знімками.
 
 ## Як перевірити проєкт
@@ -295,3 +298,15 @@ Git-вправа використовує лише тимчасові локал
 - [Скриншоти DevOps і Git](docs/evidence-11.md).
 - [Історичний знімок профілю від 9 листопада: 20/4109](screenshots/leetcode-total-2026-11-09.jpg).
 - [Поточний профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
+
+## Самостійна 12: Сортування
+
+- [1051 — Height Checker](https://leetcode.com/problems/height-checker/):
+  `src/main/java/homework/h12/T1.java` — порівняння з відсортованою копією масиву.
+- [1122 — Relative Sort Array](https://leetcode.com/problems/relative-sort-array/):
+  `src/main/java/homework/h12/T2.java` — підрахунок частот і заданий порядок.
+- Тести: `src/test/java/homework/h12/`.
+- [DevOps: транзитивні залежності й відтворювана збірка](docs/devops-12.md).
+- [Git: SSH та секрети в історії](docs/git-12.md).
+- [Результати й скриншоти](docs/evidence-12.md).
+- [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
