@@ -7,6 +7,9 @@
 | [1051 — Height Checker](https://leetcode.com/problems/height-checker/) | [T1.java](../src/main/java/homework/h12/T1.java) | [T1Test.java](../src/test/java/homework/h12/T1Test.java) |
 | [1122 — Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | [T2.java](../src/main/java/homework/h12/T2.java) | [T2Test.java](../src/test/java/homework/h12/T2Test.java) |
 
+- LeetCode Accepted: [1051 — Height Checker](../screenshots/h12/leetcode-1051-accepted.jpg),
+  [1122 — Relative Sort Array](../screenshots/h12/leetcode-1122-accepted.jpg).
+
 Для 1051 відсортував копію масиву й порахував позиції, де значення різняться.
 Для 1122 порахував частоти, записав числа в порядку `arr2`, а решту — за зростанням.
 

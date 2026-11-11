@@ -305,6 +305,8 @@ Git-вправа використовує лише тимчасові локал
   `src/main/java/homework/h12/T1.java` — порівняння з відсортованою копією масиву.
 - [1122 — Relative Sort Array](https://leetcode.com/problems/relative-sort-array/):
   `src/main/java/homework/h12/T2.java` — підрахунок частот і заданий порядок.
+- Accepted: [1051](screenshots/h12/leetcode-1051-accepted.jpg),
+  [1122](screenshots/h12/leetcode-1122-accepted.jpg).
 - Тести: `src/test/java/homework/h12/`.
 - [DevOps: транзитивні залежності й відтворювана збірка](docs/devops-12.md).
 - [Git: SSH та секрети в історії](docs/git-12.md).
