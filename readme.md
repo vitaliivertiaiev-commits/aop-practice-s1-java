@@ -1,4 +1,4 @@
-# Практичні роботи 1–12
+# Практичні роботи 1–13
 
 Розв'язання завдань з Java у шаблоні Maven `djnzx/java-template`. Практичні 2–12 продовжують
 роботу в репозиторії, створеному для Практичної 1; новий репозиторій створювати не потрібно.
@@ -18,6 +18,7 @@
 - `src/main/java/homework/h10/` — LeetCode 3304 та 344, Практична 10.
 - `src/main/java/homework/h11/` — LeetCode 268 та 169, Практична 11.
 - `src/main/java/homework/h12/` — LeetCode 1051 та 1122, Самостійна 12.
+- `src/main/java/homework/h13/` — LeetCode 278 та 2529, Самостійна 13.
 - `src/test/java/homework/` — автоматичні тести.
 - `docs/devops.md` — нотатки про термінал і файлову систему.
 - `docs/git.md` — контроль версій та основний цикл роботи з Git.
@@ -38,6 +39,8 @@
 - [Результати Практичної 11](docs/evidence-11.md) — рішення й автоматичні тести.
 - `docs/devops-12.md` і `docs/git-12.md` — матеріали Самостійної 12.
 - [Результати Самостійної 12](docs/evidence-12.md) — рішення, тести й скриншоти.
+- `docs/devops-13.md` і `docs/git-13.md` — матеріали Самостійної 13.
+- [Результати Самостійної 13](docs/evidence-13.md) — рішення, тести й скриншоти.
 - `screenshots/hNN/` — скриншоти відповідних занять; папки додаються разом зі справжніми знімками.
 
 ## Як перевірити проєкт
@@ -69,6 +72,24 @@ mvn spotless:check
 - [2413 — Accepted](screenshots/h01/t1-leetcode.jpg).
 - [1523 — Accepted](screenshots/h01/t2-leetcode.jpg).
 - [Профіль LeetCode: 22 задачі розв'язано](screenshots/leetcode-total-current.jpg).
+
+## Самостійна 13: Бінарний пошук
+
+- [278 — First Bad Version](https://leetcode.com/problems/first-bad-version/):
+  `src/main/java/homework/h13/T1.java` — бінарний пошук першої поганої версії.
+- [278 — Accepted](screenshots/h13/leetcode-278-accepted.jpg).
+- [2529 — Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/):
+  `src/main/java/homework/h13/T2.java` — пошук меж від’ємних і додатних чисел.
+- [2529 — Accepted](screenshots/h13/leetcode-2529-accepted.jpg).
+- [Профіль LeetCode: 26 задач розв'язано](screenshots/h13/leetcode-profile-26-solved.jpg).
+- Тести: `src/test/java/homework/h13/`.
+- [DevOps: репозиторії пакетів](docs/devops-13.md).
+- [Git: pull request](docs/git-13.md).
+- [Результати й скриншоти](docs/evidence-13.md).
+
+## Як запустити
+
+У корені проєкту виконайте `mvn test`.
 
 ## Відправлення на LeetCode
 
