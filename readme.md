@@ -77,8 +77,11 @@ mvn spotless:check
 
 - [278 — First Bad Version](https://leetcode.com/problems/first-bad-version/):
   `src/main/java/homework/h13/T1.java` — бінарний пошук першої поганої версії.
+- [278 — Accepted](screenshots/h13/leetcode-278-accepted.jpg).
 - [2529 — Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/):
   `src/main/java/homework/h13/T2.java` — пошук меж від’ємних і додатних чисел.
+- [2529 — Accepted](screenshots/h13/leetcode-2529-accepted.jpg).
+- [Профіль LeetCode: 26 задач розв'язано](screenshots/h13/leetcode-profile-26-solved.jpg).
 - Тести: `src/test/java/homework/h13/`.
 - [DevOps: репозиторії пакетів](docs/devops-13.md).
 - [Git: pull request](docs/git-13.md).

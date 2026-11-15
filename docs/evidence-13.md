@@ -10,6 +10,12 @@
 Для 278 застосував бінарний пошук першої поганої версії. Для 2529 знайшов
 межі від’ємних і додатних чисел у відсортованому масиві.
 
+## Скриншоти LeetCode
+
+- [278 — Accepted](../screenshots/h13/leetcode-278-accepted.jpg)
+- [2529 — Accepted](../screenshots/h13/leetcode-2529-accepted.jpg)
+- [Профіль: 26 задач розв'язано](../screenshots/h13/leetcode-profile-26-solved.jpg)
+
 `mvn clean test spotless:check` на JDK 25 завершився успішно:
 239 тестів, помилок і пропусків немає.
 
