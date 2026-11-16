@@ -348,5 +348,6 @@ Git-вправа використовує лише тимчасові локал
 - [Профіль LeetCode: 28 задач розв'язано](screenshots/h14/leetcode-profile-28-solved.jpg).
 - Тести: `src/test/java/homework/h14/`.
 - [DevOps: Maven-бібліотека й реліз](docs/devops-14.md).
+- [Опублікований Maven-реліз v1.1.0](https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java/releases/tag/v1.1.0).
 - [Git: stash, rebase і cherry-pick](docs/git-14.md).
 - [Результати й скриншоти](docs/evidence-14.md).

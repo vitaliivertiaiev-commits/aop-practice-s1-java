@@ -18,5 +18,6 @@
 
 ## DevOps і Git
 
-- [DevOps: Maven-бібліотека й реліз](devops-14.md)
+- [DevOps: Maven-бібліотека й опублікований реліз v1.1.0](devops-14.md)
+- [GitHub-реліз `v1.1.0`](https://github.com/vitaliivertiaiev-commits/aop-practice-s1-java/releases/tag/v1.1.0)
 - [Git: stash, rebase і cherry-pick](git-14.md)
