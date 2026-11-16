@@ -333,3 +333,17 @@ Git-вправа використовує лише тимчасові локал
 - [DevOps: репозиторії пакетів](docs/devops-13.md).
 - [Git: pull request](docs/git-13.md).
 - [Результати й скриншоти](docs/evidence-13.md).
+
+## Самостійна 14: Стек, черга, дек і зв'язані списки
+
+- [1047 — Remove All Adjacent Duplicates in String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/):
+  `src/main/java/homework/h14/T1.java` — видалення пар через стек символів.
+- [1047 — Accepted](screenshots/h14/leetcode-1047-accepted.jpg).
+- [232 — Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/):
+  `src/main/java/homework/h14/T2.java` — черга на двох стеках.
+- [232 — Accepted](screenshots/h14/leetcode-232-accepted.jpg).
+- [Профіль LeetCode: 28 задач розв'язано](screenshots/h14/leetcode-profile-28-solved.jpg).
+- Тести: `src/test/java/homework/h14/`.
+- [DevOps: Maven-бібліотека й реліз](docs/devops-14.md).
+- [Git: stash, rebase і cherry-pick](docs/git-14.md).
+- [Результати й скриншоти](docs/evidence-14.md).
